@@ -1,0 +1,3645 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 5.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+%	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 595.45 842.4 0 1 12 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "96" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(96) 292.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+1 18 Q
+0 X
+(Deictic use of Dutch demonstratives) 160.88 737.07 T
+1 12 Q
+(P.L.A. Piwek, R.J. Beun and A.H.M. Cremers) 180.87 711.07 T
+0 10 Q
+(e-mail: piwek@natlab.research.philips.com) 211.27 698.41 T
+1 F
+(Abstract) 279.76 640.41 T
+0 F
+-0.06 (This paper presents a study of the use of the Dutch proximate \050dit, deze; this\051 and distal \050dat,) 113.77 624.41 P
+0.2 (die; that\051 demonstratives. Previous studies on the use of demonstratives to refer to linguisti-) 113.77 612.41 P
+0.84 (cally introduced objects addressed the notion of \324force\325. Force consists of three strategies:) 113.77 600.41 P
+0.07 (\324givenness\325, \324noteworthiness\325 and \324foregrounding\325. We show how these three strategies can) 116.27 588.41 P
+-0.17 (be generalized to the deictic use of demonstratives to refer to objects in a visual task domain.) 113.77 576.41 P
+0.04 (The empirical data obtained from recorded dialogues showed that proximate demonstratives) 113.77 564.41 P
+0.21 (are used in cases where a speaker wants to signal to the addressee extra force to find the in-) 113.77 552.41 P
+-0.03 (tended referent while distals are used in cases where the referent is more \324given\325 with regard) 113.77 540.41 P
+-0.11 (to the addressee\325s consciousness. Our results differ from those that have been reported in the) 113.77 528.41 P
+(literature on the use of the English demonstrative.) 113.77 516.41 T
+1 14 Q
+(Introduction) 85.76 477.74 T
+0 12 Q
+1.6 (When two agents communicate while performing a task together, they must indicate,) 85.76 459.07 P
+-0.43 (among other things, which of the available objects should be used. In a shared application) 85.76 445.07 P
+-0.55 (domain where both agents can see the objects and their properties, they can use referential) 85.76 431.07 P
+0.62 (acts to refer to the domain objects. Take, for instance, the referential act which is com-) 85.76 417.07 P
+(posed of the following expression:) 85.76 403.07 T
+2 F
+(that r) 85.76 375.07 T
+(ed pyr) 111.66 375.07 T
+(amid on top of the yellow bloc) 141.8 375.07 T
+(k) 286.89 375.07 T
+0 F
+0.08 (This expression consists of a demonstrative determiner \050) 85.76 347.07 P
+2 F
+0.08 (that) 357.26 347.07 P
+0 F
+0.08 (\051, a noun \050) 375.93 347.07 P
+2 F
+0.08 (pyramid) 425.48 347.07 P
+0 F
+0.08 (\051 and two) 465.48 347.07 P
+0.17 (modifiers \050) 85.76 333.07 P
+2 F
+0.17 (red) 138.93 333.07 P
+0 F
+0.17 ( and) 154.92 333.07 P
+2 F
+0.17 (on top of the yellow block) 178.6 333.07 P
+0 F
+0.17 (\051. The noun and the two modifiers describe) 303.12 333.07 P
+-0.34 (an object, i.e., its shape, colour and position. It is clear that these are properties which can) 85.76 319.07 P
+0.4 (help an addressee in identifying the object. It is less obvious how the demonstrative de-) 85.76 305.07 P
+(terminer) 85.76 291.07 T
+2 F
+(that) 129.42 291.07 T
+0 F
+( could have a similar function.) 148.09 291.07 T
+-0.17 (In this paper the identificational function of the Dutch demonstrative will be exam-) 113.77 277.07 P
+0.17 (ined by comparing the use of the two main existing types of demonstratives: proximates) 85.76 263.07 P
+(and distals:) 85.76 249.07 T
+(Proximate:) 85.76 221.07 T
+2 F
+(dit) 85.76 207.07 T
+0 F
+( \050this\051: neuter gender/singular) 98.43 207.07 T
+2 F
+(deze) 85.76 193.07 T
+0 F
+( \050this/these\051: rest) 107.09 193.07 T
+0 9.6 Q
+(1) 187.08 197.87 T
+0 12 Q
+(Distal:) 85.76 179.07 T
+2 F
+(dat) 85.76 165.07 T
+0 F
+( \050that\051: neuter gender/singular) 101.1 165.07 T
+2 F
+(die) 85.76 151.07 T
+0 F
+( \050that/those\051: rest) 100.43 151.07 T
+85.76 128.19 510.96 143.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 128.19 510.96 143.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 141.15 238.76 141.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.) 92.85 121.53 T
+0.6 (\324Rest\325 stands for \324common gender/singular and common or neuter gender/plural\325, where \324com-) 107.02 121.53 P
+(mon gender\325 means having one form for male and female.) 107.02 109.53 T
+2 F
+(IPO Annual Progress Report 30 1995) 98.72 87.2 T
+84.72 99.2 252.72 99.2 2 L
+0.5 H
+2 Z
+N
+FMENDPAGE
+%%EndPage: "96" 1
+%%Page: "97" 2
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(97) 292.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.42 (We will focus on the deictic use of the demonstrative determiner as a component of the) 85.76 741.07 P
+-0.23 (referential expressions. In contrast with its anaphoric use, where a demonstrative in com-) 85.76 727.07 P
+-0.21 (bination with the other parts of the expression refers back to an object which has been in-) 85.76 713.07 P
+0.35 (troduced linguistically, a demonstrative is used deictically if it refers to an object which) 85.76 699.07 P
+-0.43 (is \050physically\051 present in the application domain. If the object can be seen, the demonstra-) 85.76 685.07 P
+(tive can be combined with a pointing act.) 85.76 671.07 T
+1.3 (We will proceed as follows. In the next section we will show how the concepts) 113.77 657.07 P
+0.9 (which have been employed in the study of the anaphoric use of demonstratives can be) 85.76 643.07 P
+-0.01 (generalized so as to formulate a hypothesis about deictically used Dutch demonstratives.) 85.76 629.07 P
+0.05 (Next, we will describe the arrangement of the dialogue situation in which the hypothesis) 85.76 615.07 P
+0.13 (is tested. Finally, in the last two sections before the conclusions, the main results will be) 85.76 601.07 P
+(presented and discussed.) 85.76 587.07 T
+1 14 Q
+(The role of demonstratives in referential acts) 85.76 547.74 T
+2 12 Q
+(Force as the central concept) 85.76 523.07 T
+0 F
+-0.05 (Kirsner \0501979\051 claims that the distal and the proximate demonstrative can be used to sig-) 85.76 509.07 P
+0.87 (nal different) 85.76 495.07 P
+2 F
+0.87 (forces with which the addressee is instructed to find the referent) 149.47 495.07 P
+0 F
+0.87 (.) 466.11 495.07 P
+0 9.6 Q
+0.69 (2) 469.11 499.87 P
+0 12 Q
+0.87 ( He ad-) 473.91 495.07 P
+-0.48 (vanced the hypothesis that, in Dutch, proximates signal stronger force \050i.e., greater urging) 85.76 481.07 P
+0.72 (that the addressee find the referent\051 than distals. Kirsner argued that there are basically) 85.76 467.07 P
+-0.65 (three strategies which people use to decide on signalling either high or low force; they are:) 85.76 453.07 P
+0.66 (givenness, noteworthiness and foregrounding. All other concepts which have been pro-) 85.76 439.07 P
+0.17 (posed in the literature can be seen as variations on these three concepts. We will discuss) 85.76 425.07 P
+0.24 (each of them in the next three sections and present proposals on how to generalize them) 85.76 411.07 P
+(for application to the deictic use of demonstratives.) 85.76 397.07 T
+2 F
+(Givenness) 85.76 373.07 T
+0 F
+-0.24 (The strategy of givenness is that) 85.76 359.07 P
+2 F
+-0.24 (speakers will most strongly direct the addressee\325s atten-) 242.31 359.07 P
+-0.26 (tion to entities that are not given \324in the addressee\325s consciousness\325) 85.76 345.07 P
+0 F
+-0.26 ( \050for instance, objects) 408.44 345.07 P
+(which were introduced rather far back in the discourse\051.) 85.76 331.07 T
+-0.46 (In order to check whether people actually apply the givenness strategy, we need cri-) 113.77 317.07 P
+0.75 (teria to determine the level of givenness of an entity. In the literature four factors have) 85.76 303.07 P
+-0.23 (been proposed which are thought to influence the givenness of referents \050see Ariel, 1988,) 85.76 289.07 P
+(1990\051:) 85.76 275.07 T
+(1.) 85.76 261.07 T
+2 F
+0.83 (Distance) 114.11 261.07 P
+0.83 (.) 156.59 261.07 P
+0 F
+0.83 ( Distance refers to the distance between the antecedent and the anaphor) 159.59 261.07 P
+0.41 (\050measured in terms of the number of interv) 114.11 247.07 P
+0.41 (ening w) 323.09 247.07 P
+0.41 (ords or sentences\051. The greater) 361.71 247.07 P
+(the distance, the less gi) 114.11 233.07 T
+(v) 224.8 233.07 T
+(en the object to which the antecedent refers is.) 230.62 233.07 T
+(2.) 85.76 219.07 T
+2 F
+1.12 (Unity) 114.11 219.07 P
+1.12 (.) 140.11 219.07 P
+0 F
+1.12 ( Antecedents which belong to the same conte) 143.11 219.07 P
+1.12 (xt \050e.g., frame/w) 367.74 219.07 P
+1.12 (orld/point of) 449.5 219.07 P
+(vie) 114.11 205.07 T
+(w/se) 128.47 205.07 T
+(gment or paragraph\051 as the anaphor are more gi) 150.29 205.07 T
+(v) 377.92 205.07 T
+(en than those that are not.) 383.74 205.07 T
+(3.) 85.76 191.07 T
+2 F
+0.3 (Salience) 114.11 191.07 P
+0.3 (.) 154.58 191.07 P
+0 F
+0.3 ( Some referents stand out more than others and are therefore more gi) 157.58 191.07 P
+0.3 (v) 490.81 191.07 P
+0.3 (en.) 496.63 191.07 P
+(F) 114.11 177.07 T
+(or e) 120.6 177.07 T
+(xample, salience is caused by the topicality of a referent.) 138.74 177.07 T
+(4.) 85.76 163.07 T
+2 F
+-0.4 (Competition.) 114.11 163.07 P
+0 F
+-0.4 ( If some objects ha) 176.45 163.07 P
+-0.4 (v) 265.25 163.07 P
+-0.4 (e the same le) 271.07 163.07 P
+-0.4 (v) 331.89 163.07 P
+-0.4 (el of salience, this diminishes the gi-) 337.71 163.07 P
+(v) 114.11 149.07 T
+(enness of the objects.) 119.93 149.07 T
+85.76 116.19 510.96 131.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 116.19 510.96 131.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 129.15 238.76 129.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2.) 92.85 109.53 T
+(The notion of) 107.02 109.53 T
+2 F
+(force) 163.96 109.53 T
+0 F
+( was first proposed in Garc\222a \0501975\051.) 184.51 109.53 T
+FMENDPAGE
+%%EndPage: "97" 2
+%%Page: "98" 3
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(98) 292.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.43 (The factor) 85.76 741.07 P
+2 F
+0.43 (distance) 139.26 741.07 P
+0 F
+0.43 ( is, in the first place, useful for the analysis of anaphoric demonstra-) 179.25 741.07 P
+-0.13 (tives. It, however, also plays a role in the deictic use of demonstratives. Even if an object) 85.76 727.07 P
+0.49 (has not been referred to previously in the conversation \050e.g., it is part of the application) 85.76 713.07 P
+0.02 (domain instead of the linguistic context\051, it may be associated with an object which does) 85.76 699.07 P
+0.19 (have a high level of givenness due to the distance factor \050i.e., recent reference to the ob-) 85.76 685.07 P
+(ject\051.) 85.76 671.07 T
+0.22 (In a situation where two dialogue participants can see some part of the application) 113.77 657.07 P
+0.73 (domain, its spatial properties may actuate associations \050) 85.76 643.07 P
+2 F
+0.73 (unity) 358.14 643.07 P
+0 F
+0.73 (\051 between objects. Objects) 382.14 643.07 P
+-0.25 (may, for instance, be grouped into those which are close to the participants and those that) 85.76 629.07 P
+-0.1 (are far away. In fact, proximate demonstratives are usually thought to refer to nearby ob-) 85.76 615.07 P
+-0.06 (jects and distals to objects that are far away. This kind of use will not be examined in the) 85.76 601.07 P
+(present study.) 85.76 587.07 T
+-0.44 (We will concentrate on situations in which all objects are roughly the same distance) 113.77 573.07 P
+-0.62 (from both dialogue participants. In such situations what counts is the distance between the) 85.76 559.07 P
+0.12 (objects themselves. Following Cremers and Beun \0501995\051, we will assume that if one ob-) 85.76 545.07 P
+0.1 (ject is at the centre of the attention of the dialogue participants, then part of the attention) 85.76 531.07 P
+0.39 (will rub off on to the objects which are adjacent to it. Grosz and Sidner \0501986\051 describe) 85.76 517.07 P
+0.72 (the object at the centre of attention as the object in) 85.76 503.07 P
+2 F
+0.72 (focus) 338.67 503.07 P
+0 F
+0.72 (. Focus is the highest possible) 364 503.07 P
+0.04 (level of givenness that an object can acquire. We propose to describe the objects that are) 85.76 489.07 P
+0.72 (adjacent to the object in focus as in) 85.76 475.07 P
+2 F
+0.72 (implicit spatial focus) 263.52 475.07 P
+0 F
+0.72 (. The focus and the objects in) 365.64 475.07 P
+(spatial implicit focus together form the) 85.76 461.07 T
+2 F
+(focus area) 275.75 461.07 T
+0 F
+(.) 326.07 461.07 T
+0.41 (The factors) 113.77 447.07 P
+2 F
+0.41 (distance) 171.89 447.07 P
+0 F
+0.41 ( and) 211.89 447.07 P
+2 F
+0.41 (salience) 236.03 447.07 P
+0 F
+0.41 ( determine whether an object is in focus. All ob-) 275.35 447.07 P
+-0.23 (jects referred to in the most recent utterance are candidates for being in focus. If only one) 85.76 433.07 P
+0.64 (object was referred to, then that object will automatically be in focus. If more than one) 85.76 419.07 P
+-0 (object was referred to, the most salient one will be in focus. An object may, for instance,) 85.76 405.07 P
+(be spatially salient because it has been manipulated as a part of the task.) 85.76 391.07 T
+0.51 (Salience can also arise through task-independent events, e.g., an object which un-) 113.77 377.07 P
+0.86 (expectedly explodes will draw attention even if the object is not relevant to the task at) 85.76 363.07 P
+(hand.) 85.76 349.07 T
+-0.61 (Another task-independent source of spatial) 113.77 335.07 P
+2 F
+-0.61 (salience) 319.69 335.07 P
+0 F
+-0.61 ( is the visually perceptible prop-) 359.01 335.07 P
+-0.41 (erties of objects. Objects which have an exceptional property with respect to the other ob-) 85.76 321.07 P
+0.25 (jects in the application domain are more salient than those that do not have such a prop-) 85.76 307.07 P
+(erty.) 85.76 293.07 T
+2 F
+-0.24 (Competition) 113.77 279.07 P
+0 F
+-0.24 ( means that, if a number of objects have the same level of salience, this) 173.11 279.07 P
+-0.05 (decreases their givenness. In our study this factor will not be taken into account, because) 85.76 265.07 P
+-0.36 (two levels of givenness \050i.e., given and not given\051 suffice for the study of the two types of) 85.76 251.07 P
+0.1 (demonstrative determiners \050distal and proximate\051. If an object is in some way or another) 85.76 237.07 P
+(salient in the application domain, then it is judged to be given.) 85.76 223.07 T
+2 F
+(Noteworthiness) 85.76 199.07 T
+0 F
+0.32 (The strategy of noteworthiness is that) 85.76 185.07 P
+2 F
+0.32 (speakers will most strongly direct the attention of) 271.02 185.07 P
+(the addressee to entities that the speaker is most interested in talking about) 85.76 171.07 T
+0 F
+(.) 447.08 171.07 T
+-0.21 (The notion of noteworthiness, or importance, is rather problematic. Kirsner \0501979\051,) 113.77 157.07 P
+-0.49 (for instance, suggests that objects are noteworthy by virtue of being single objects, named) 85.76 143.07 P
+1.5 (objects or human beings. This claim may have been appropriate for the kind of texts) 85.76 129.07 P
+0.24 (which he examined, viz., a book on analytical philosophy and a novel, but it is certainly) 85.76 115.07 P
+FMENDPAGE
+%%EndPage: "98" 3
+%%Page: "99" 4
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(99) 292.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+-0.01 (not universally applicable. For example, a bricklayer who tells his assistant which bricks) 85.76 741.07 P
+-0.59 (he needs, is at that moment more interested in the bricks than in the person who hands him) 85.76 727.07 P
+(the bricks.) 85.76 713.07 T
+0.17 (Noteworthiness seems to depend on the context \050in particular, the task at hand\051. In) 113.77 699.07 P
+-0.58 (a novel, which is an attempt to create a psychologically plausible picture of the main char-) 85.76 685.07 P
+-0.58 (acters, these characters are obviously important. A bricklayer\325s task requires a completely) 85.76 671.07 P
+(different filling in of the notion of noteworthiness.) 85.76 657.07 T
+0.02 (Noteworthiness is a sufficiently general concept to be useful for the analysis of the) 113.77 643.07 P
+-0.14 (deictic use of demonstratives. It does not depend directly on the domain but rather on the) 85.76 629.07 P
+0.41 (task which has to be carried out in the domain \050or the shared goals of the participants if) 85.76 615.07 P
+0.78 (there is no explicitly stated task\051. The task determines which objects in the domain are) 85.76 601.07 P
+(noteworthy and which are not.) 85.76 587.07 T
+2 F
+(Foregrounding) 85.76 563.07 T
+0 F
+0.5 (The strategy of) 85.76 549.07 P
+2 F
+0.5 (foregrounding) 162.92 549.07 P
+0 F
+0.5 ( is that) 232.26 549.07 P
+2 F
+0.5 (if a speaker wants to apply strong force to coerce) 268.77 549.07 P
+-0.15 (the addressee to find the referent \050because it is noteworthy or not given\051, then he will use) 85.76 535.07 P
+(all available and appropriate means to do so) 85.76 521.07 T
+0 F
+(.) 302.1 521.07 T
+-0.74 (We will try to show that the type of demonstrative \050distal or proximate\051 is one means) 113.77 507.07 P
+0.14 (for signalling strong or weak force. A different means to signal strong force is to put the) 85.76 493.07 P
+0.62 (referent to the foreground. Kirsner \0501979\051 suggests that in a text a referent can be fore-) 85.76 479.07 P
+-0 (grounded by putting its referring expression \050a\051 in a main clause instead of a subordinate) 85.76 465.07 P
+-0.61 (clause, \050b\051 at or near the beginning of a sentence or \050c\051 in the first sentence of a paragraph.) 85.76 451.07 P
+0.04 (In a situation where objects are present in the domain and can be seen by both par-) 113.77 437.07 P
+(ticipants, an appropriate means to foreground an object is) 85.76 423.07 T
+2 F
+(to point at it) 364.38 423.07 T
+0 F
+(.) 423.39 423.07 T
+2 F
+(Results on anaphorically used demonstratives) 85.76 399.07 T
+0 F
+0.19 (Kirsner \0501979\051 and Kirsner and Van Heuven \0501988\051 reported studies in which the use of) 85.76 385.07 P
+1.46 (the Dutch demonstratives was analysed. The hypothesis, in both studies, was that) 85.76 371.07 P
+2 F
+1.46 (the) 496.3 371.07 P
+1.2 (proximate signals a stronger force than the distal demonstrative) 85.76 357.07 P
+0 F
+1.2 (. This hypothesis was) 404.03 357.07 P
+-0.62 (confirmed by the quantitative analyses which showed that proximates are preferred to dis-) 85.76 343.07 P
+(tals to refer to objects that are given and/or important \050i.e., noteworthy\051.) 85.76 329.07 T
+-0.52 (In Sidner \0501979\051, a similar claim to the role of importance has been made for the use) 113.77 315.07 P
+-0.09 (of the English demonstrative. Exactly the opposite claim has, however, been put forward) 85.76 301.07 P
+0.09 (with respect to givenness: English distals are preferred to refer to less given objects than) 85.76 287.07 P
+0.27 (English proximates \050Ariel, 1990\051. Ariel does not, however, present any quantitative evi-) 85.76 273.07 P
+1.61 (dence for this claim. Such evidence can be found in Gundel, Hedberg and Zacharski) 85.76 259.07 P
+0.94 (\0501993\051. Gundel et al. found correlations between the different forms of demonstratives) 85.76 245.07 P
+-0.47 (and different levels of givenness, specifically that distals are associated with a lower level) 85.76 231.07 P
+(of givenness than proximates.) 85.76 217.07 T
+-0.52 (Gundel et al. \0501993\051 examined various kinds of data ranging from transcripts of cas-) 113.77 203.07 P
+0.5 (ual conversations to technical specification documents. Levels of givenness were deter-) 85.76 189.07 P
+0.74 (mined by having at least two people independently determine the level of givenness of) 85.76 175.07 P
+-0.41 (referents. The coders were given general guidelines, such as, \324if an object can be assumed) 85.76 161.07 P
+-0.28 (to be part of general cultural knowledge or shared personal experience of speaker and ad-) 85.76 147.07 P
+0.37 (dressee, or if it has been mentioned previously in the discourse in question, the status is) 85.76 133.07 P
+(at least familiar\325.) 85.76 119.07 T
+0 9.6 Q
+(3) 167.41 123.87 T
+FMENDPAGE
+%%EndPage: "99" 4
+%%Page: "100" 5
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(100) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+1.36 (Our approach for deictically used demonstratives differs in at least two respects) 113.77 741.07 P
+0.17 (from that of Gundel et al. \0501993\051. Firstly, we will examine a very restricted dialogue sit-) 85.76 727.07 P
+-0.24 (uation. This enables us to control the following parameters: the task, the mode of interac-) 85.76 713.07 P
+0.5 (tion and the domain of conversation. This is important because both the hypothesis and) 85.76 699.07 P
+-0.19 (the results depend on them. Secondly, we will formulate a number of objective criteria to) 85.76 685.07 P
+0.13 (determine the givenness of a referent. This makes it easier for others to replicate our ob-) 85.76 671.07 P
+(servational study.) 85.76 657.07 T
+2 F
+(The hypothesis) 85.76 633.07 T
+0 F
+0.42 (Our hypothesis is based on the findings of Kirsner \0501979\051 and Kirsner and Van Heuven) 85.76 619.07 P
+(\0501988\051 for the Dutch demonstrative determiner.) 85.76 605.07 T
+-0.71 (We hypothesize that the deictically used Dutch proximate demonstrative determiner) 113.77 591.07 P
+1.23 (signals stronger force than the deictically used Dutch distal demonstrative determiner.) 85.76 577.07 P
+(The following results are predicted:) 85.76 563.07 T
+(1.) 85.76 549.07 T
+-0.01 (\050Gi) 114.11 549.07 P
+-0.01 (v) 129.8 549.07 P
+-0.01 (enness\051. Proximates are preferred to distals for referring to objects which ha) 135.62 549.07 P
+-0.01 (v) 499.81 549.07 P
+-0.01 (e) 505.63 549.07 P
+(a lo) 114.11 535.07 T
+(w le) 131.47 535.07 T
+(v) 151.5 535.07 T
+(el of gi) 157.32 535.07 T
+(v) 191.02 535.07 T
+(enness.) 196.84 535.07 T
+(2.) 85.76 521.07 T
+0.94 (\050Note) 114.11 521.07 P
+0.94 (w) 141.13 521.07 P
+0.94 (orthiness\051. Proximates are preferred to distals for referring to note) 149.68 521.07 P
+0.94 (w) 473.81 521.07 P
+0.94 (orth) 482.35 521.07 P
+0.94 (y/) 501.62 521.07 P
+(important objects.) 114.11 507.07 T
+(3.) 85.76 493.07 T
+-0.49 (\050F) 114.11 493.07 P
+-0.49 (ore) 124.6 493.07 P
+-0.49 (grounding\051. Proximates are combined more frequently than distals with de) 139.74 493.07 P
+-0.49 (vic-) 492.3 493.07 P
+(es to fore) 114.11 479.07 T
+(ground an object.) 158.58 479.07 T
+-0.12 (In the next section we will describe the dialogue situation which we used to examine this) 85.76 465.07 P
+(hypothesis and give an operational formulation of the hypothesis.) 85.76 451.07 T
+1 14 Q
+(The dialogue situation) 85.76 411.74 T
+2 12 Q
+(Arrangement of the dialogue situation) 85.76 387.07 T
+0 F
+0.28 (The data from which we will draw our conclusions consist of a set of \050transcriptions of\051) 85.76 373.07 P
+-0.27 (ten dialogues.) 85.76 359.07 P
+0 9.6 Q
+-0.22 (4) 152.15 363.87 P
+0 12 Q
+-0.27 ( In Figure 1 the arrangement of the dialogue situation is depicted schemat-) 156.95 359.07 P
+-0.53 (ically. Ten pairs of Dutch subjects participated in the observational study. Half of the sub-) 85.76 345.07 P
+(jects were male, the other half female, and their ages varied from 20 to 60 years.) 85.76 331.07 T
+85.76 140.19 510.96 155.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 140.19 510.96 155.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 153.15 238.76 153.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(3.) 92.85 133.53 T
+(Gundel, personal communication, 1995.) 107.02 133.53 T
+(4.) 92.85 121.53 T
+1.08 (The transcriptions were made on the basis of video-tape recordings because the dialogues in-) 107.02 121.53 P
+(volved gestures.) 107.02 109.53 T
+85.76 104.19 510.96 749.07 C
+85.76 168.89 510.96 313.07 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(Base Plate) 278.22 273.82 T
+(Blocks) 228.8 230.74 T
+(Example) 337.6 237.91 T
+(Building) 337.6 225.91 T
+222.19 252.23 375.53 310.9 R
+0.5 H
+0 Z
+N
+298.55 250.23 298.55 214.4 2 L
+3 H
+2 Z
+N
+268.19 261.23 330.19 293.23 R
+0.5 H
+0 Z
+N
+222.19 216.23 263.19 252.06 R
+N
+335.19 216.23 375.53 252.23 R
+N
+(T) 235.38 284.23 T
+(able) 240.69 284.23 T
+90 450 9 9.5 278.86 232.56 A
+(B) 275.71 229.73 T
+90 450 9 9.5 317.19 232.56 A
+(I) 315.63 229.65 T
+221.56 175.87 374.89 195.87 R
+7 X
+V
+0 X
+-0.16 (Figure 1: Arrangement of the dialogue) 221.56 189.2 P
+(situation.) 221.56 177.2 T
+85.76 104.19 510.96 749.07 C
+0.72 1.2 594.72 841.2 C
+FMENDPAGE
+%%EndPage: "100" 5
+%%Page: "101" 6
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(101) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.79 (The application domain consisted of a number of blocks) 113.77 741.07 P
+0 9.6 Q
+0.63 (5) 390.03 745.87 P
+0 12 Q
+0.79 ( that could be removed,) 394.83 741.07 P
+-0.22 (replaced and reoriented. The blocks represented some sort of abstract building, placed on) 85.76 727.07 P
+-0.07 (a green base plate \05038x38 cm\051 which functioned as a shared workspace. The blocks were) 85.76 713.07 P
+0.97 (of four different colours \050red, yellow, green and blue, respectively\051, three sizes \050small,) 85.76 699.07 P
+0.67 (medium and large\051 and four shapes \050square, bar, convex and concave\051. We chose these) 85.76 685.07 P
+0.94 (types of objects because we wanted a simple and non-figurative application domain in) 85.76 671.07 P
+4.59 (order to avoid extensive reasoning based on domain-specific knowledge by the) 85.76 657.07 P
+(participants.) 85.76 643.07 T
+0.51 (The task of the participants was to rearrange the blocks into an example building.) 113.77 629.07 P
+-0.13 (One of the participants \050the instructor I\051 had to instruct the other \050the builder B\051; only the) 85.76 615.07 P
+-0.28 (instructor could see the example building. Hence, the replica represented the goal state of) 85.76 601.07 P
+(the application domain which was known only to the instructor.) 85.76 587.07 T
+-0.15 (Both the builder and the instructor could point at and observe all objects present on) 113.77 573.07 P
+0.06 (the base plate, but only the builder was allowed to manipulate the objects with his or her) 85.76 559.07 P
+1.25 (hands. The builder and instructor were separated by a screen to avoid communication) 85.76 545.07 P
+(other than by spoken language and gesturing.) 85.76 531.07 T
+2 F
+(Force in the dialogue situation) 85.76 507.07 T
+0 F
+-0.2 (An object was judged +Given if it fulfilled at least one of the three criteria below. An ob-) 85.76 493.07 P
+0 (ject that met none of the three criteria was classified) 85.76 479.07 P
+3 F
+0 (-) 339.05 479.07 P
+0 F
+0 (Given. An object was said to be in) 345.64 479.07 P
+0.07 (focus if it was referred to in the most recent utterance, and distinguishable from possible) 85.76 465.07 P
+(other objects referred to in that utterance because it was the only object manipulated.) 85.76 451.07 T
+(1.) 85.76 437.07 T
+2 F
+0.68 (Spatial Unity) 114.11 437.07 P
+0.68 (.) 177.8 437.07 P
+0 F
+0.68 ( The object is adjacent to the object in focus or is itself in focus. In) 180.8 437.07 P
+(other w) 114.11 423.07 T
+(ords, the object lies within the) 150.31 423.07 T
+2 F
+(focus ar) 297.97 423.07 T
+(ea) 336.53 423.07 T
+0 F
+(.) 347.86 423.07 T
+(2.) 85.76 409.07 T
+2 F
+0.23 (Spatial Salience) 114.11 409.07 P
+0.23 (.) 191.82 409.07 P
+0 F
+0.23 ( The object in question has an e) 194.82 409.07 P
+0.23 (xceptional shape. The con) 347.91 409.07 P
+0.23 (v) 473.43 409.07 P
+0.23 (e) 479.25 409.07 P
+0.23 (x and) 484.4 409.07 P
+1.35 (conca) 114.11 395.07 P
+1.35 (v) 141.85 395.07 P
+1.35 (e blocks met this criterion. The) 147.67 395.07 P
+1.35 (y stood out clearly among the rectangular) 303.56 395.07 P
+(blocks, which were in the majority) 114.11 381.07 T
+(.) 279.97 381.07 T
+(3.) 85.76 367.07 T
+2 F
+-0.19 (F) 114.11 367.07 P
+-0.19 (ocusing Expr) 120.18 367.07 P
+-0.19 (essions.) 183.21 367.07 P
+0 F
+-0.19 ( The object lies in an area to which the speak) 220.88 367.07 P
+-0.19 (er has e) 434.85 367.07 P
+-0.19 (xplicitly) 470.95 367.07 P
+-0.47 (directed the attention of the addressee. This is mark) 114.11 353.07 P
+-0.47 (ed by what we will call focusing) 357.82 353.07 P
+0.22 (e) 114.11 339.07 P
+0.22 (xpressions as in \324) 119.26 339.07 P
+2 F
+0.22 (W) 202.91 339.07 P
+0.22 (at nou helemaal naar vor) 211.81 339.07 P
+0.22 (en zit) 334.24 339.07 P
+0 F
+0.22 (, daar zit die rode dw) 360.13 339.07 P
+0.22 (ars\325 \050liter-) 462.42 339.07 P
+-0.04 (ally: \324) 114.11 325.07 P
+2 F
+-0.04 (What now entir) 142.4 325.07 P
+-0.04 (ely to the fr) 215.87 325.07 P
+-0.04 (ont is) 270.2 325.07 P
+0 F
+-0.04 (, there is that red one oriented transv) 296.5 325.07 P
+-0.04 (ersely\325\051.) 471.31 325.07 P
+-0.65 (We expect distals to be preferred to refer to +Given objects and proximates to be preferred) 85.76 311.07 P
+(to refer to) 85.76 297.07 T
+3 F
+(-) 136.08 297.07 T
+0 F
+(Given objects.) 142.67 297.07 T
+0.44 (We can determine whether a block is) 113.77 283.07 P
+2 F
+0.44 (noteworthy) 297.79 283.07 P
+0 F
+0.44 ( by examining whether the utter-) 351.79 283.07 P
+-0.61 (ance in which the referential act to the block occurs is an instruction to manipulate it. Note) 85.76 269.07 P
+0.31 (that objects are referred to not only because they have to be manipulated. They can also) 85.76 255.07 P
+-0.5 (be referred to in order to specify other parameters of manipulations. Consider \324) 85.76 241.07 P
+2 F
+-0.5 (Put the red) 458.64 241.07 P
+-0.5 (block on top of the yellow block) 85.76 227.07 P
+0 F
+-0.5 (\325. The yellow block is referred to in order to provide a pre-) 235.4 227.07 P
+0.31 (cise specification of the manipulation of the red block. In this case the red block will be) 85.76 213.07 P
+(considered more noteworthy than the yellow block.) 85.76 199.07 T
+(Finally, pointing acts will be considered to be a means for) 113.77 185.07 T
+2 F
+(foregrounding) 395.07 185.07 T
+0 F
+( objects.) 464.41 185.07 T
+85.76 116.19 510.96 131.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 116.19 510.96 131.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 129.15 238.76 129.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(5.) 92.85 109.53 T
+(The blocks were samples of the DUPLO) 107.02 109.53 T
+0 8 Q
+(\250) 269.21 113.53 T
+0 10 Q
+( series of LEGO) 275.29 109.53 T
+0 8 Q
+(\250) 340.55 113.53 T
+0 10 Q
+(.) 346.63 109.53 T
+FMENDPAGE
+%%EndPage: "101" 6
+%%Page: "102" 7
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(102) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+1 14 Q
+0 X
+(The results) 85.76 739.74 T
+0 12 Q
+0.62 (We looked at those referential acts that were used for) 85.76 721.07 P
+2 F
+0.62 (initial) 350.5 721.07 P
+0 F
+0.62 ( identification of objects in) 379.18 721.07 P
+-0.59 (the application domain. In other words, we looked at deictically used referential acts since) 85.76 707.07 P
+(objects referred to for the first time cannot as yet be part of the linguistic context.) 85.76 693.07 T
+3.29 (The ten dialogues obtained in the set-up of the dialogue situation contained) 113.77 679.07 P
+0.39 (143) 85.76 665.07 P
+0.39 (instances of initial referential acts. We excluded 13 referential acts which consisted) 106.76 665.07 P
+-0.22 (of a plural and four instances of miscommunication and repair. Of the remaining 126 ref-) 85.76 651.07 P
+1.18 (erential acts 102 \050i.e., 81%\051 contained a demonstrative determiner. The distribution of) 85.76 637.07 P
+0.13 (these referential acts over +Given and) 85.76 623.07 P
+3 F
+0.13 (-) 271.91 623.07 P
+0 F
+0.13 (Given entities can be found in Table 1, in which) 278.5 623.07 P
+0.21 (\324distal\325 is a contraction of distal demonstrative expression and \324proximate\325 a contraction) 85.76 609.07 P
+0.36 (of proximate demonstrative expression. \324Other\325 stands for referring expressions with no) 85.76 595.07 P
+(determiner or a definite \050de;) 85.76 581.07 T
+2 F
+(the) 223.39 581.07 T
+0 F
+(\051 or indefinite article \050een;) 238.05 581.07 T
+2 F
+(a) 367.02 581.07 T
+0 F
+(\051.) 373.02 581.07 T
+-0.4 (Note that, of a total of 126 referential acts, 73% were used to refer to +Given entities. The) 85.76 374.19 P
+0.09 (remaining 27% were used to refer to) 85.76 360.19 P
+3 F
+0.09 (-) 264.67 360.19 P
+0 F
+0.09 (Given entities. For a discussion of this finding we) 271.26 360.19 P
+(refer readers to Piwek, Beun and Cremers \0501995\051.) 85.76 346.19 T
+2 F
+(Givenness) 85.76 322.19 T
+0 F
+-0.56 (We used the) 85.76 308.19 P
+3 F
+-0.56 (c) 146.38 308.19 P
+0 9.6 Q
+-0.45 (2) 152.97 312.99 P
+0 12 Q
+-0.56 ( test for two independent samples \050with the categories + Given and) 157.77 308.19 P
+3 F
+-0.56 (-) 475.04 308.19 P
+0 F
+-0.56 (Given) 481.63 308.19 P
+-0.29 (and the groups distal \050+ pointing\051, proximate + pointing and other\051 to examine the data of) 85.76 294.19 P
+(Table 1.) 85.76 280.19 T
+2.64 (The expected number of distal \050+ pointing\051 and +Given was 53.30 \050observed) 113.77 266.19 P
+0.58 (number 62\051, whereas the expected number of distal + \050pointing\051 and) 85.76 252.19 P
+3 F
+0.58 (-) 422.21 252.19 P
+0 F
+0.58 (Given was 19.70) 428.8 252.19 P
+1.03 (\050observed number 11\051. The direction of the difference between expected and observed) 85.76 238.19 P
+2.33 (numbers is consistent with our hypothesis that distals are preferred for reference to) 85.76 224.19 P
+(+Given objects.) 85.76 210.19 T
+1.31 (The expected number of proximate + pointing and +Given was 21.17 \050observed) 113.77 196.19 P
+-0.08 (number 13\051, whereas the expected number of proximate + pointing and) 85.76 182.19 P
+3 F
+-0.08 (-) 429.55 182.19 P
+0 F
+-0.08 (Given was 7.83) 436.14 182.19 P
+4.45 (\050observed number 16\051. Again, the direction of the difference is consistent with) 85.76 168.19 P
+0.66 (our) 85.76 154.19 P
+0.66 (hypothesis: proximates are preferred for referring to) 104.76 154.19 P
+3 F
+0.66 (-) 362.29 154.19 P
+0 F
+0.66 (Given objects.) 368.87 154.19 P
+0 9.6 Q
+0.53 (6) 438.86 158.99 P
+0 12 Q
+0.66 ( These results) 443.65 154.19 P
+(were highly significant:) 85.76 140.19 T
+3 F
+(c) 202.75 140.19 T
+0 9.6 Q
+(2) 209.34 144.99 T
+(df=2) 214.14 137.19 T
+0 12 Q
+( = 16.99 with P < 0.001.) 232.35 140.19 T
+4.29 (Furthermore, we used the binomial test to examine proximates and distals) 113.77 126.19 P
+1.22 (separately. The results were as follows: for the distribution of distal \050+ pointing\051 over) 85.76 112.19 P
+85.76 104.19 510.96 749.07 C
+165.01 537.22 431.71 563.07 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+180.86 538.48 416.69 559.31 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+1.11 (Table 1: Numbers of referential acts broken down into +) 180.86 552.65 P
+(and) 180.86 540.65 T
+3 F
+(-) 197.8 540.65 T
+0 F
+(Given entities.) 203.29 540.65 T
+85.76 104.19 510.96 749.07 C
+0.72 1.2 594.72 841.2 C
+85.76 104.19 510.96 749.07 C
+109.18 398.19 487.54 523.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+179.76 400.67 416.54 519.84 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(referential act) 179.76 513.17 T
+(+Given) 328.58 513.17 T
+3 F
+(-) 385.27 513.17 T
+0 F
+(Given) 390.77 513.17 T
+(distal) 179.76 495.17 T
+(41) 342.76 495.17 T
+(6) 404.54 495.17 T
+(distal + pointing) 179.76 477.17 T
+(21) 342.76 477.17 T
+(5) 404.79 477.17 T
+(proximate + pointing) 179.76 459.17 T
+(13) 342.76 459.17 T
+(16) 399.45 459.17 T
+(other) 179.76 441.17 T
+(17) 342.76 441.17 T
+(7) 404.7 441.17 T
+(total) 179.76 423.17 T
+(92) 342.76 423.17 T
+(34) 399.45 423.17 T
+(percentage) 179.76 405.17 T
+(73%) 335.67 405.17 T
+(27%) 392.36 405.17 T
+179.19 507.67 417.53 507.67 2 L
+0.5 H
+2 Z
+N
+179.19 435.51 417.53 435.51 2 L
+N
+85.76 104.19 510.96 749.07 C
+0.72 1.2 594.72 841.2 C
+FMENDPAGE
+%%EndPage: "102" 7
+%%Page: "103" 8
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(103) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+1.65 (+) 85.76 741.07 P
+1.65 (and) 95.53 741.07 P
+3 F
+1.65 (-) 117.51 741.07 P
+0 F
+1.65 (Given we found a deviation from the null hypothesis with P=0.011 \050with the) 124.1 741.07 P
+1.63 (binomial test based on the normal distribution\051, and for the distribution of proximate) 85.76 727.07 P
+1.25 (+) 85.76 713.07 P
+1.25 (pointing over + and) 95.53 713.07 P
+3 F
+1.25 (-) 197.94 713.07 P
+0 F
+1.25 (Given the deviation from the null hypothesis was found to be) 204.53 713.07 P
+1.9 (P) 85.76 699.07 P
+1.9 (<) 95.43 699.07 P
+1.9 (0.005 \050by application of the exact binomial test\051. In particular, the preference of) 105.2 699.07 P
+(proximates for reference to) 85.76 685.07 T
+3 F
+(-) 219.05 685.07 T
+0 F
+(Given entities is very marked according to these tests.) 225.63 685.07 T
+2 F
+(Noteworthiness) 85.76 661.07 T
+0 F
+-0.6 (We now examine noteworthiness in the light of the findings for givenness. The results can) 85.76 647.07 P
+0.34 (be found in Table 2. An object was described as +Noteworthy if it was referred to in an) 85.76 633.07 P
+1.61 (utterance which described a manipulation of the object; otherwise the object was de-) 85.76 619.07 P
+(scribed as) 85.76 605.07 T
+3 F
+(-) 136.41 605.07 T
+0 F
+(Noteworthy.) 143 605.07 T
+1.24 (The table tells us that distals are preferred for referring to +Given entities when) 113.77 591.07 P
+0.07 (compared with proximates: distal and +G = 62 vs. proximate and +G = 13. We do, how-) 85.76 577.07 P
+-0.15 (ever, see that proximates, if used to refer to a +Given entity, are preferred for referring to) 85.76 563.07 P
+(+Noteworthy entities: proximate and +G, +N = 10 vs. proximate and +G,) 85.76 549.07 T
+3 F
+(-) 440.57 549.07 T
+0 F
+(N = 3.) 447.15 549.07 T
+0.31 (On the other hand, proximates are preferred for referring to) 113.77 535.07 P
+3 F
+0.31 (-) 404.42 535.07 P
+0 F
+0.31 (Given entities: distal) 411.01 535.07 P
+0.05 (and) 85.76 521.07 P
+3 F
+0.05 (-) 106.14 521.07 P
+0 F
+0.05 (G = 11 vs. proximate and) 112.73 521.07 P
+3 F
+0.05 (-) 238.13 521.07 P
+0 F
+0.05 (G = 16. Furthermore, we see that proximates, if used to) 244.71 521.07 P
+-0.72 (refer to a) 85.76 507.07 P
+3 F
+-0.72 (-) 129.91 507.07 P
+0 F
+-0.72 (Given entity, are preferred for referring to +Noteworthy entities: proximate and) 136.49 507.07 P
+3 F
+(-) 85.76 493.07 T
+0 F
+(G, +N = 13 vs. proximate and) 92.35 493.07 T
+3 F
+(-) 238.87 493.07 T
+0 F
+(G,) 245.46 493.07 T
+3 F
+(-) 260.12 493.07 T
+0 F
+(N = 3.) 266.71 493.07 T
+2 F
+(Foregrounding) 85.76 355.86 T
+0 F
+-0.57 (Proximate demonstratives are always used in combination with a pointing act. On the oth-) 85.76 341.86 P
+-0.36 (er hand, distal demonstratives are preferred in the absence of a pointing act when they are) 85.76 327.86 P
+0.54 (used to refer to +Given entities. The ratio was 21 : 41 \050with pointing: without pointing,) 85.76 313.86 P
+-0.72 (with) 85.76 299.86 P
+3 F
+-0.72 (c) 109.38 299.86 P
+0 9.6 Q
+-0.58 (2) 115.96 304.66 P
+-0.58 (df=1) 120.76 296.86 P
+0 12 Q
+-0.72 ( = 6.46, P < 0.025\051. Distal demonstratives used to refer to) 138.98 299.86 P
+3 F
+-0.72 (-) 409.17 299.86 P
+0 F
+-0.72 (Given entities occur) 415.75 299.86 P
+0.42 (almost as many times with as without a pointing act \0505 : 6\051. This result, however, is not) 85.76 285.86 P
+(statistically significant.) 85.76 271.86 T
+1 14 Q
+(Discussion) 85.76 232.52 T
+0 12 Q
+-0.16 (All three sub-hypotheses were confirmed by our findings. This shows that the deictic use) 85.76 213.86 P
+-0 (of the Dutch demonstrative can be described by means of the concept of) 85.76 199.86 P
+2 F
+-0 (force) 435.31 199.86 P
+0 F
+-0 ( just as the) 459.97 199.86 P
+1.83 (anaphoric use \050which was examined in Kirsner \0501979\051 and Kirsner and Van Heuven) 85.76 185.86 P
+-0.37 (\0501988\051\051. It is one more piece of evidence for the claim that the use of referential acts, both) 85.76 171.86 P
+85.76 140.19 510.96 155.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 140.19 510.96 155.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 153.15 238.76 153.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6.) 92.85 133.53 T
+0.34 (For the category \324other\325 the expected number for +Given was 17.52 \050observed number 17\051, and) 107.02 133.53 P
+-0.4 (for) 107.02 121.53 P
+3 F
+-0.4 (-) 120.78 121.53 P
+0 F
+-0.4 (Given 6.48 \050observed number 7\051. Here the expected numbers differ only marginally from the) 126.27 121.53 P
+(observed numbers.) 107.02 109.53 T
+85.76 104.19 510.96 749.07 C
+97.1 448.38 499.62 475.07 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+121.61 449.64 475.11 472.14 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+-0.46 (Table 2: Numbers of distals and proximates broken down into +/) 121.61 465.48 P
+3 F
+-0.46 (-) 375.92 465.48 P
+0 F
+-0.46 ( G\050iven\051 and +/) 381.41 465.48 P
+3 F
+-0.46 (-) 441.48 465.48 P
+0 F
+-0.46 ( N\050ote-) 446.97 465.48 P
+(worthy\051 entities.) 121.61 453.48 T
+85.76 104.19 510.96 749.07 C
+0.72 1.2 594.72 841.2 C
+85.76 104.19 510.96 749.07 C
+85.76 381.86 510.96 434.38 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+122.28 384.01 475.11 430.84 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(demonstrative) 122.28 424.17 T
+(+G, +N) 231.44 424.17 T
+(+G,) 302.92 424.17 T
+3 F
+(-) 320.78 424.17 T
+0 F
+(N) 326.27 424.17 T
+3 F
+(-) 373.79 424.17 T
+0 F
+(G, +N) 379.28 424.17 T
+3 F
+(-) 444.65 424.17 T
+0 F
+(G,) 450.14 424.17 T
+3 F
+(-) 462.36 424.17 T
+0 F
+(N) 467.85 424.17 T
+(distal) 122.28 406.17 T
+(33) 252.78 406.17 T
+(29) 322.68 406.17 T
+(7) 398.55 406.17 T
+(4) 468.5 406.17 T
+(proximate) 122.28 388.17 T
+(10) 252.28 388.17 T
+(3) 328.18 388.17 T
+(13) 394.05 388.17 T
+(3) 469 388.17 T
+121.61 417.34 474.61 417.34 2 L
+0.5 H
+2 Z
+N
+85.76 104.19 510.96 749.07 C
+0.72 1.2 594.72 841.2 C
+FMENDPAGE
+%%EndPage: "103" 8
+%%Page: "104" 9
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(104) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.46 (in texts and in conversations, is governed by general principles of human cognition and) 85.76 741.07 P
+(perception.) 85.76 727.07 T
+0.09 (The findings on Dutch, however, do not agree with those on English. Gundel et al.) 113.77 713.07 P
+0.5 (\0501993\051 found that in English the proximate signals higher givenness than the distal. For) 85.76 699.07 P
+-0.21 (Dutch, we found exactly the reverse. Nevertheless, a mapping is possible between the re-) 85.76 685.07 P
+0.02 (sult from Gundel et al. and ours. Gundel et al. found that, whereas proximates were used) 85.76 671.07 P
+0.54 (exclusively to refer to activated objects, distals were used to refer to both activated and) 85.76 657.07 P
+0.31 (\050the less given\051 familiar objects \050Gundel et al. define activated as \324The referent is repre-) 85.76 643.07 P
+0.38 (sented in current short term memory\325 and familiar as \324The addressee is able to uniquely) 85.76 629.07 P
+-0.74 (identify the intended referent because he already has a representation of it in memory) 85.76 615.07 P
+3 F
+-0.74 (\274) 487.97 615.07 P
+0 F
+-0.74 (\325\051.) 499.97 615.07 P
+-0.64 (We found that proximates are preferred for referring to) 113.77 601.07 P
+3 F
+-0.64 (-) 374.93 601.07 P
+0 F
+-0.64 (Given entities and that they) 381.52 601.07 P
+-0.17 (always occur in combination with a pointing act. Distals, on the other hand, are preferred) 85.76 587.07 P
+0.22 (for referring to +Given entities and do not have to be combined with a pointing act. The) 85.76 573.07 P
+-0.18 (mapping from our data to those of Gundel et al. is now fairly straightforward: we assume) 85.76 559.07 P
+3.19 (that \0501\051 objects which have been pointed at are activated and \0502\051 +Given objects) 85.76 545.07 P
+(are) 85.76 531.07 T
+(familiar.) 103.41 531.07 T
+0.07 (The possibility of a mapping does not mean that there are no differences. For Eng-) 113.77 517.07 P
+0.3 (lish, a hierarchy of cognitive statuses was proposed in which activated is a higher status) 85.76 503.07 P
+0.57 (than familiar. Next, proximates were associated with activated and distals with familiar) 85.76 489.07 P
+0.54 (\050see Gundel et al. \0501993\051, but also Ariel \0501988, 1990\051\051. For the deictic use of the Dutch) 85.76 475.07 P
+0.43 (demonstrative a one-dimensional hierarchy of givenness levels is not appropriate. What) 85.76 461.07 P
+0.05 (we observed can be described better in a procedural manner: if an object is) 85.76 447.07 P
+3 F
+0.05 (-) 448.33 447.07 P
+0 F
+0.05 (Given, then) 454.92 447.07 P
+0.71 (a speaker uses extra means to help the addressee to identify the object \050in other words,) 85.76 433.07 P
+-0 (signal extra force to find the referent\051. He can do this by using a proximate and pointing.) 85.76 419.07 P
+-0.36 (The speaker thereby \324activates\325 the referent. Objects which are already familiar do not re-) 85.76 405.07 P
+-0.1 (quire activation by a combination of pointing and a proximate demonstrative expression;) 85.76 391.07 P
+(reference to such objects with a distal demonstrative expression suffices.) 85.76 377.07 T
+-0.34 (It would be interesting to see whether this pattern is also present in the data on Eng-) 113.77 363.07 P
+-0.65 (lish. This requires making a precise distinction between the level of givenness of an object) 85.76 349.07 P
+2 F
+(immediately before) 85.76 335.07 T
+0 F
+( a referential act and the level) 178.08 335.07 T
+2 F
+(due to the referential act itself) 323.03 335.07 T
+0 F
+(.) 468.02 335.07 T
+1 14 Q
+(Conclusions) 85.76 295.74 T
+0 12 Q
+0.68 (On the basis of a quantitative analysis it was shown that already existing results on the) 85.76 277.07 P
+-0.11 (anaphoric use of demonstratives could be generalized to their deictic use. For that reason) 85.76 263.07 P
+-0.23 (the notion of force, which was developed especially for linguistic contexts, was extended) 85.76 249.07 P
+-0.65 (to an application in a visual domain. The results showed that the same cognitive principles) 85.76 235.07 P
+0.25 (such as focusing, foregrounding and importance underlie the process of reference to ob-) 85.76 221.07 P
+(jects in both a linguistic and a visual context.) 85.76 207.07 T
+-0.12 (The main result was that proximate demonstratives indicate that a speaker wants to) 113.77 193.07 P
+0.38 (signal to the addressee extra force to find the relevant referent while, on the other hand,) 85.76 179.07 P
+-0.42 (distals are often used in cases where the referent was more \324given\325 in the addressee\325s con-) 85.76 165.07 P
+(sciousness.) 85.76 151.07 T
+-0.39 (Our findings on Dutch, however, did not correspond as well to some of the reported) 113.77 137.07 P
+-0.5 (findings on the anaphoric use of the English demonstrative. Studies on the use of the Eng-) 85.76 123.07 P
+-0.62 (lish demonstrative are based only on the notions of givenness and importance, and neglect) 85.76 109.07 P
+FMENDPAGE
+%%EndPage: "104" 9
+%%Page: "105" 10
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(105) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.4 (the strategy of foregrounding. This strategy is not limited to Dutch, however. This is an) 85.76 741.07 P
+-0.23 (interesting area for future research, i.e., examination of the deictic use of English demon-) 85.76 727.07 P
+(stratives on the basis of the notion of force and, in particular, foregrounding.) 85.76 713.07 T
+1 14 Q
+(Acknowledgements) 85.76 673.74 T
+0 12 Q
+2.94 (The authors wish to thank Don Bouwhuis, Bob Kirsner, Tanya Reinhart and Arie) 85.76 655.07 P
+0.8 (Verhagen for their helpful comments. The research reported in this paper was partially) 85.76 641.07 P
+(funded by the Cooperation Unit of Brabant Universities \050SOBU\051.) 85.76 627.07 T
+1 14 Q
+(References) 85.76 587.74 T
+0 10 Q
+(Ariel, M. \0501988\051. Referring and accessibility.) 85.76 570.41 T
+2 F
+(Journal of Linguistics, 24,) 269.06 570.41 T
+0 F
+( 65-87.) 374.35 570.41 T
+(Ariel, M. \0501990\051.) 85.76 558.41 T
+2 F
+(Accessing Noun-Phrase Antecedents) 156.86 558.41 T
+0 F
+(. London: Routledge.) 303.5 558.41 T
+0.46 (Cremers, A.H.M. & Beun, R.J. \0501995\051. Object reference in a shared domain of conversation.) 85.76 546.41 P
+2 F
+0.46 (IPO Manu-) 464.67 546.41 P
+(script No. 1089) 113.77 534.41 T
+0 F
+(, submitted for publication in) 175.72 534.41 T
+2 F
+(Pragmatics and Cognition) 294.61 534.41 T
+0 F
+(.) 400.73 534.41 T
+0.53 (Garc\222a, E. \0501975\051.) 85.76 522.41 P
+2 F
+0.53 (The Role of Theory in Linguistic Analysis: The Spanish Pronoun System) 161.78 522.41 P
+0 F
+0.53 (. Amsterdam:) 455.99 522.41 P
+(North-Holland.) 113.77 510.41 T
+-0.24 (Grosz, B. & Sidner, C. \0501986\051. Attention, intentions and the structure of discourse.) 85.76 498.41 P
+2 F
+-0.24 (Computational Linguis-) 415.35 498.41 P
+(tics, 12\0503\051,) 113.77 486.41 T
+0 F
+( 175-204.) 156.82 486.41 T
+0.22 (Gundel, J., Hedberg, N. & Zacharski, R. \0501993\051. Cognitive status and the form of referring expressions in) 85.76 474.41 P
+(discourse.) 113.77 462.41 T
+2 F
+(Language, 69\0502\051,) 156.54 462.41 T
+0 F
+( 274-307.) 225.7 462.41 T
+0.02 (Kirsner, R. \0501979\051. Deixis in discourse: An exploratory quantitative study of modern Dutch demonstrative) 85.76 450.41 P
+0.79 (adjectives. In: T. Givon \050Ed.\051:) 113.77 438.41 P
+2 F
+0.79 (Syntax and Semantics: Discourse and Syntax, Volume 3,) 240.49 438.41 P
+0 F
+0.79 (355-375) 475.13 438.41 P
+2 F
+0.79 (.) 508.46 438.41 P
+0 F
+(New York: Academic Press.) 113.77 426.41 T
+-0.39 (Kirsner, R. & Heuven, V. van \0501988\051. The significance of demonstrative position in modern Dutch.) 85.76 414.41 P
+2 F
+-0.39 (Lingua,) 480.12 414.41 P
+(76,) 113.77 402.41 T
+0 F
+( 209-248.) 126.27 402.41 T
+-0.43 (Piwek, P.L.A., Beun, R.J. & Cremers, A.H.M. \0501995\051. Demonstratives in Dutch cooperative task dialogues.) 85.76 390.41 P
+2 F
+(IPO Manuscript No. 1134) 113.77 378.41 T
+0 F
+(, submitted for publication in) 218.21 378.41 T
+2 F
+(Computational Linguistics) 337.1 378.41 T
+0 F
+(.) 443.51 378.41 T
+0.25 (Sidner, C. \0501979\051. Towards a computational theory of definite anaphora comprehension in English.) 85.76 366.41 P
+2 F
+0.25 (Tech-) 488.19 366.41 P
+(nical Report 537.) 113.77 354.41 T
+0 F
+(Cambridge, Massachusetts: Artificial Intelligence Laboratory, MIT.) 185.99 354.41 T
+FMENDPAGE
+%%EndPage: "105" 10
+%%Trailer
+%%BoundingBox: 0 0 595.45 842.4
+%%PageOrder: Ascend
+%%Pages: 10
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Symbol
+%%EOF

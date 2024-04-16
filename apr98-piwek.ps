@@ -1,0 +1,4187 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 595.45 842.4 0 1 15 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 1 /Symbol FMFONTDEFINE
+4 0 /Times-BoldItalic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "103" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(103) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+1 18 Q
+0 X
+(Information flow and gaps) 196.1 737.07 T
+1 12 Q
+(P.L.A. Piwek) 264.69 711.07 T
+0 10 Q
+(e-mail: paul.piwek@itri.brighton.ac.uk) 220.29 698.41 T
+1 F
+(Abstract) 279.76 640.41 T
+0 F
+-0.1 (In this paper we provide an outline of a model for the flow information in conversations. We) 113.77 624.41 P
+-0.19 (explain the model by means of a metaphor. We propose that certain natural language phrases) 113.77 612.41 P
+1.08 (\050i.e., anaphoric expressions and questions\051 are used to express gaps. These gaps are what) 113.77 600.41 P
+0.61 (gives rise to information flow in conversations. After dealing with a simple conversational) 113.77 588.41 P
+-0.2 (exchange in terms of this approach, we proceed to deal with different forms of indirect infor-) 113.77 576.41 P
+-0.29 (mation transfer in conversations as they are manifested by bridging anaphors and indirect an-) 113.77 564.41 P
+-0.45 (swers. At that point, we will leave the metaphorical presentation behind us and examine some) 113.77 552.41 P
+0.87 (of the details of our logic-based model itself. For the full details of the model we refer to) 113.77 540.41 P
+(Piwek \0501998\051.) 113.77 528.41 T
+1 14 Q
+(Introduction) 85.76 489.74 T
+0 12 Q
+-0.13 (The success of an agent depends heavily on the ability of the agent to adapt its behaviour) 85.76 471.07 P
+0.08 (to its environment. Adaptation can be achieved by means of direct stimulus-response re-) 85.76 457.07 P
+0.58 (lations between events in the environment and actions of the agent. For instance, snails) 85.76 443.07 P
+-0.22 (withdraw into their shell when they come into contact with a pointed object. Such behav-) 85.76 429.07 P
+0.58 (iour is very much tied to the local properties of the current situation in which the agent) 85.76 415.07 P
+0.46 (finds itself. Often it is, however, profitable to take into account information which goes) 85.76 401.07 P
+0.42 (beyond the confines of the current situation. For instance, for deciding whether to go to) 85.76 387.07 P
+-0.31 (the cinema right now, information I came across when reading the programme some time) 85.76 373.07 P
+0.56 (ago is certainly helpful. This presupposes that I stored the information that is conveyed) 85.76 359.07 P
+-0.23 (by the programme in some form or other. This information can be considered to be an in-) 85.76 345.07 P
+-0.67 (ternal representation, which can guide an agent in its interaction with the environment that) 85.76 331.07 P
+(the representation stands for.) 85.76 317.07 T
+0.48 (The internal representation that an agent has of the world is constantly updated in) 113.77 303.07 P
+-0.65 (various ways \050which might actually not be as disparate as the following classification sug-) 85.76 289.07 P
+-0.24 (gests\051. We may discern direct observation, theory building \050i.e., generalizing information) 85.76 275.07 P
+-0.17 (which came from direct observations\051, drawing conclusions and communication, i.e., ex-) 85.76 261.07 P
+0.69 (change of information amongst agents. When agents communicate, they aim at sharing) 85.76 247.07 P
+-0.22 (the representations that they individually have of their environment \050this environment in-) 85.76 233.07 P
+0.13 (cludes the agents themselves and their conversation\051) 85.76 219.07 P
+0 9.6 Q
+0.11 (1) 338.52 223.87 P
+0 12 Q
+0.13 (. Of course, sharing of information) 343.32 219.07 P
+-0.62 (is only feasible if the agents entertain structurally similar conceptualizations of the world.) 85.76 205.07 P
+-0.59 (The aim of this paper is to provide the outline of a formal model of information flow) 113.77 191.07 P
+-0.57 (in natural language dialogue \050the paper is based on Piwek \0501998\051 which contains more de-) 85.76 177.07 P
+-0.29 (tails. See also the last section of this paper for related references\051. This model should pre-) 85.76 163.07 P
+0.87 (dict whether a particular dialogue is felicitous, given the background in which the dia-) 85.76 149.07 P
+85.76 128.19 510.96 143.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 128.19 510.96 143.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 141.15 238.76 141.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.) 92.85 121.53 T
+-0.39 (Even utterances such as \324hello\325 can be seen as conveying information. For instance, \324hello\325 can be) 107.02 121.53 P
+(used to indicate that an agent wants to initiate a conversation.) 107.02 109.53 T
+2 F
+(IPO Annual Progress Report 33 1998) 98.72 87.2 T
+84.72 99.2 252.72 99.2 2 L
+0.5 H
+2 Z
+N
+FMENDPAGE
+%%EndPage: "103" 1
+%%Page: "104" 2
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(104) 289.36 67.85 T
+85.76 99.19 510.96 749.07 R
+7 X
+V
+0 X
+-0.42 (logue is conducted. On the basis of our functional view on the role of information, we can) 85.76 741.07 P
+1.77 (formulate an) 85.76 727.07 P
+2 F
+1.77 (a priori) 153.28 727.07 P
+0 F
+1.77 ( constraint on our model of information flow: information flow) 192.06 727.07 P
+0.18 (should not destroy the representational nature of the information. If this representational) 85.76 713.07 P
+(nature is lost, the information can no longer help the agent to adapt to its environment.) 85.76 699.07 T
+-0.6 (At this point, logic, i.e., the study of correct reasoning, comes into the picture. Logic) 113.77 685.07 P
+-0.64 (concerns precisely the manipulation of information without loss of its representational na-) 85.76 671.07 P
+0.37 (ture: an argument is logically valid only if the truth of premises carries over to the truth) 85.76 657.07 P
+-0.4 (of the conclusion. We shall see that logic is not only on) 85.76 643.07 P
+2 F
+-0.4 (a priori) 349.96 643.07 P
+0 F
+-0.4 ( grounds a good candidate) 386.57 643.07 P
+0.11 (for modelling information flow, but also provides an adequate model for the data of nat-) 85.76 629.07 P
+(ural language use.) 85.76 615.07 T
+-0.21 (We will proceed as follows. We start by providing a metaphorical account of infor-) 113.77 601.07 P
+-0.73 (mation flow. This account is developed by discussing a very simple example. Subsequent-) 85.76 587.07 P
+-0.26 (ly, we discuss some of the details of the underlying formal model. This enables us to pro-) 85.76 573.07 P
+0.21 (vide an outline of our account of \324indirect\325 information flow in discourse. The main aim) 85.76 559.07 P
+-0.3 (will be to show that logic provides the proper handle to deal with that type of information) 85.76 545.07 P
+-0.34 (flow. Finally, we end with a summary and some references to further reading on the topic) 85.76 531.07 P
+(of this paper.) 85.76 517.07 T
+1 14 Q
+(Gaps and changing pools of information) 85.76 479.74 T
+0 12 Q
+0.09 (To speak of information flow would be somewhat gratuitous if there were not some out-) 85.76 461.07 P
+0.44 (standing characteristics that information shares with other things that can flow, such as,) 85.76 447.07 P
+-0.38 (say, water, tea, or coffee. The model of information that we propose includes such a char-) 85.76 433.07 P
+0.66 (acteristic. Like a liquid, information can be thought of as flowing from higher to lower) 85.76 419.07 P
+0.2 (places; in particular, it flows into informational gaps. This analogy between information) 85.76 405.07 P
+-0.59 (and liquids should become clearer after we have introduced the notion of an informational) 85.76 391.07 P
+(item.) 85.76 377.07 T
+2 F
+(Informational items) 85.76 353.07 T
+0 F
+0.08 (An informational item consists of an object, and this object carries its type with it. Thus,) 85.76 339.07 P
+0.35 (instead of writing o, for some informational object, we write) 85.76 325.07 P
+2 F
+0.35 (o) 382.53 325.07 P
+0 F
+0.35 (:) 391.88 325.07 P
+2 F
+0.35 (t) 398.56 325.07 P
+0 F
+0.35 (, where) 401.89 325.07 P
+2 F
+0.35 (t) 440.9 325.07 P
+0 F
+0.35 ( is the type of) 444.24 325.07 P
+0.18 (the object) 85.76 311.07 P
+2 F
+0.18 (o) 136.12 311.07 P
+0 F
+0.18 (. The type should be thought of as part of a conceptualization of the external) 142.12 311.07 P
+-0.55 (world, i.e., the domain of interpretation of the informational items. The presence of an ob-) 85.76 297.07 P
+-0.1 (ject of a certain type) 85.76 283.07 P
+2 F
+-0.1 (t) 186.22 283.07 P
+0 F
+-0.1 ( in the agent\325s information pool means to the agent that there exists) 189.55 283.07 P
+0.52 (an object in the external world which fits the type) 85.76 269.07 P
+2 F
+0.52 (t) 332.31 269.07 P
+0 F
+0.52 (. To make this more concrete, let us) 335.65 269.07 P
+0.62 (have a look at a very simple body of information. The domain of interpretation for this) 85.76 255.07 P
+1.01 (pool of information is an electron microscope) 85.76 241.07 P
+0 9.6 Q
+0.81 (2) 311.12 245.87 P
+0 12 Q
+1.01 (. This pool of information contains five) 315.92 241.07 P
+0.45 (items \050to the right, we have added natural language paraphrases of each of the informa-) 85.76 227.07 P
+(tional items\051:) 85.76 213.07 T
+(\0501\051) 85.76 187.07 T
+2 F
+(a) 128.28 187.07 T
+0 F
+(:) 142.46 187.07 T
+2 F
+(lens) 149.54 187.07 T
+0 F
+(there is a lens, we refer to it with constant) 241.67 187.07 T
+2 F
+(a) 445.3 187.07 T
+(b) 128.28 173.07 T
+0 F
+(:) 142.46 173.07 T
+2 F
+(lens) 149.54 173.07 T
+0 F
+(there is a lens, we refer to it with constant) 241.67 173.07 T
+2 F
+(b) 445.3 173.07 T
+(s) 128.28 159.07 T
+0 F
+(:) 142.46 159.07 T
+2 F
+(c1) 149.54 159.07 T
+3 F
+( \327) 160.87 159.07 T
+2 F
+(a) 169.87 159.07 T
+(a) 241.67 159.07 T
+0 F
+( is a c1 lens) 247.67 159.07 T
+2 F
+(t) 128.28 145.07 T
+0 F
+(:) 142.46 145.07 T
+2 F
+(c2) 149.54 145.07 T
+3 F
+( \327) 160.87 145.07 T
+2 F
+(b) 169.87 145.07 T
+(b) 241.67 145.07 T
+0 F
+( is a c2 lens) 247.67 145.07 T
+2 F
+(u) 128.28 131.07 T
+0 F
+(:) 142.46 131.07 T
+2 F
+(excited) 149.54 131.07 T
+3 F
+( \327) 183.52 131.07 T
+2 F
+(b) 192.52 131.07 T
+(b) 241.67 131.07 T
+0 F
+( is excited) 247.67 131.07 T
+85.76 111.19 510.96 126.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 111.19 510.96 126.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 124.15 238.76 124.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2.) 92.85 104.53 T
+(The example is taken from the) 107.02 104.53 T
+(D) 231.44 104.53 T
+0 8 Q
+(EN) 238.66 104.53 T
+0 10 Q
+(K) 249.33 104.53 T
+( domain \050see Bunt) 256.55 104.53 T
+2 F
+(et al.) 332.1 104.53 T
+0 F
+(, 1998\051.) 352.1 104.53 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "104" 2
+%%Page: "105" 3
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(105) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+-0.11 (In words: There are two lenses,) 85.76 741.07 P
+2 F
+-0.11 (a) 238.74 741.07 P
+0 F
+-0.11 ( and) 244.74 741.07 P
+2 F
+-0.11 (b) 267.86 741.07 P
+0 F
+-0.11 (. They are different kinds of lenses:) 273.86 741.07 P
+2 F
+-0.11 (a) 446.4 741.07 P
+0 F
+-0.11 ( is a c1 lens,) 452.4 741.07 P
+0.29 (and) 85.76 727.07 P
+2 F
+0.29 ( b) 103.09 727.07 P
+0 F
+0.29 ( is a c2 lens. Furthermore,) 112.38 727.07 P
+2 F
+0.29 (b) 242.09 727.07 P
+0 F
+0.29 ( is excited \050The light source in an electron microscope) 248.09 727.07 P
+1 (is an electron gun. The microscope has electromagnetic lenses. By varying the current) 85.76 713.07 P
+0.26 (through the lens, the magnification can be changed\051. Note that in our example, there are) 85.76 699.07 P
+0.27 (also objects whose type is a proposition \050e.g.,) 85.76 685.07 P
+2 F
+0.27 ( u) 305.65 685.07 P
+0 F
+0.27 ( in) 314.92 685.07 P
+2 F
+0.27 (u) 330.8 685.07 P
+0 F
+0.27 ( :) 336.8 685.07 P
+2 F
+0.27 (excited) 346.69 685.07 P
+3 F
+0.27 ( \327) 380.67 685.07 P
+2 F
+0.27 (b) 390.22 685.07 P
+0 F
+0.27 (\051. Such an object stands) 396.22 685.07 P
+0.4 (for the situation which would make the proposition true in the domain of interpretation.) 85.76 671.07 P
+1.02 (Simultaneously, the object functions as an internal proof/witness for the agent that the) 85.76 657.07 P
+(proposition holds.) 85.76 643.07 T
+2 F
+(Information flow in dialogue) 85.76 619.07 T
+0 F
+-0.44 (A dialogue enables the interlocutors to share the information that their respective pools of) 85.76 605.07 P
+-0.52 (information contain. The information pool of an agent can be divided into the information) 85.76 591.07 P
+-0.22 (that the agent believes to share with the other agent, let us call this its) 85.76 577.07 P
+2 F
+-0.22 (public information) 418.5 577.07 P
+0 F
+-0.22 (,) 507.96 577.07 P
+0.25 (and the information that the agent does not believe to share, i.e., its) 85.76 563.07 P
+2 F
+0.25 (private information) 414.03 563.07 P
+0 F
+0.25 (.) 507.96 563.07 P
+-0.21 (In the course of a dialogue, private information is continually turned into public informa-) 85.76 549.07 P
+0.68 (tion. The prototypical conversational unit for doing so is a pair of utterances, such as a) 85.76 535.07 P
+-0.43 (question followed by an answer. By means of a question, an interlocutor can specify what) 85.76 521.07 P
+-0.26 (information it would like to become public. The answer subsequently provides this infor-) 85.76 507.07 P
+(mation) 85.76 493.07 T
+0 9.6 Q
+(3) 119.1 497.87 T
+0 12 Q
+(. Consider:) 123.9 493.07 T
+(\0502\051) 85.76 467.07 T
+(A) 128.28 467.07 T
+(:) 142.46 467.07 T
+(Which lens is excited?) 149.54 467.07 T
+(B) 128.28 453.07 T
+(:) 142.46 453.07 T
+(The c2 lens \050is excited\051.) 149.54 453.07 T
+-0.25 (We will examine this exchange in detail by assigning a pool of information to each of the) 85.76 427.07 P
+-0.17 (interlocutors at the outset of the exchange, and then study how their utterances cause that) 85.76 413.07 P
+0.33 (information to start flowing. At the beginning of the dialogue, interlocutor B has the in-) 85.76 399.07 P
+-0.21 (formation pool under \0501\051. Additionally, assume that in B\325s pool of information, the infor-) 85.76 385.07 P
+-0.2 (mation that there is a c1 and a c2 lens is considered to be public, whereas the information) 85.76 371.07 P
+(that the c2 lens is excited is private.) 85.76 357.07 T
+-0.24 (So, let us examine A\325s utterance from B\325s perspective. A\325s utterance can be seen as) 113.77 343.07 P
+-0.69 (presenting an informational gap to B. This gap has to be filled with a lens which is excited.) 85.76 329.07 P
+(Formally, such gaps can be expressed by means of a so-called segment:) 85.76 315.07 T
+(\0503\051) 85.76 289.07 T
+4 F
+(X) 128.28 289.07 T
+0 F
+( :) 136.29 289.07 T
+2 F
+(lens) 145.62 289.07 T
+0 F
+(,) 164.95 289.07 T
+2 F
+( S) 167.95 289.07 T
+0 F
+( :) 176.95 289.07 T
+2 F
+( excited) 183.29 289.07 T
+3 F
+( \327) 220.27 289.07 T
+4 F
+(X) 229.27 289.07 T
+0 F
+-0.15 (The bold faced) 85.76 263.07 P
+4 F
+-0.15 (X) 160.28 263.07 P
+0 F
+-0.15 ( stands for the gap that needs to be filled. Note that there is another gap,) 168.29 263.07 P
+2 F
+-0.09 (S) 85.76 249.07 P
+0 F
+-0.09 (, which also needs to be filled. The latter gap has to be filled with a proof for the propo-) 91.76 249.07 P
+-0 (sition that the filler of) 85.76 235.07 P
+4 F
+-0 (X) 193.41 235.07 P
+0 F
+-0 ( is excited. However, there is a crucial difference between) 201.42 235.07 P
+4 F
+-0 (X) 482.63 235.07 P
+0 F
+-0 ( and) 490.63 235.07 P
+2 F
+0.29 (S) 85.76 221.07 P
+0 F
+0.29 (: whereas the person who posed the question is interested in the identity of the filler of) 91.76 221.07 P
+4 F
+-0.47 (X) 85.76 207.07 P
+0 F
+-0.47 (, the identity of) 93.77 207.07 P
+2 F
+-0.47 (S) 168.21 207.07 P
+0 F
+-0.47 ( is irrelevant) 174.21 207.07 P
+0 9.6 Q
+-0.38 (4) 233.25 211.87 P
+0 12 Q
+-0.47 (. The pool of information which is associated with B does) 238.05 207.07 P
+(indeed provide the information to fill these gaps:) 85.76 193.07 T
+85.76 152.19 510.96 167.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 152.19 510.96 167.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 165.15 238.76 165.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(3.) 92.85 145.53 T
+0.18 (For the purpose of this paper, we make the simplifying assumption that the person who answers) 107.02 145.53 P
+-0.36 (the question is known, by the interlocutors, to be an expert on the topic of the question. This caus-) 107.02 133.53 P
+-0.11 (es the answer to become shared information. For a more sophisticated model of how information) 107.02 121.53 P
+(comes to be shared, see, e.g., Piwek \0501998\051.) 107.02 109.53 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "105" 3
+%%Page: "106" 4
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(106) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+(\0504\051) 85.76 741.07 T
+-0.39 (Here, we have used a pictorial representation for the gaps) 85.76 573.07 P
+4 F
+-0.39 (X) 360.75 573.07 P
+0 F
+-0.39 ( and) 368.75 573.07 P
+2 F
+-0.39 (S) 391.29 573.07 P
+0 F
+-0.39 (. Each gap has, what we) 397.29 573.07 P
+0.51 (might call, a filter associated with it. The filter is written below the gap and determines) 85.76 559.07 P
+0.37 (which objects are allowed into the gap. In this case, the gaps) 85.76 545.07 P
+2 F
+0.37 (S) 383.44 545.07 P
+0 F
+0.37 ( and) 389.44 545.07 P
+4 F
+0.37 (X) 413.5 545.07 P
+0 F
+0.37 ( are filled with the) 421.51 545.07 P
+0.23 (objects) 85.76 531.07 P
+2 F
+0.23 (u) 122.99 531.07 P
+0 F
+0.23 ( and) 128.99 531.07 P
+2 F
+0.23 (b) 152.79 531.07 P
+0 F
+0.23 (, respectively. We already pointed out that from the questioner\325s point of) 158.79 531.07 P
+0.16 (view only the filler of gap) 85.76 517.07 P
+4 F
+0.16 (X) 214.71 517.07 P
+0 F
+0.16 ( is of interest: this filler stands for the lens which is excited.) 222.71 517.07 P
+0.23 (At this point, the task for) 85.76 503.07 P
+0.23 (B is to communicate to A that the object which) 210.17 503.07 P
+2 F
+0.23 (b) 441.84 503.07 P
+0 F
+0.23 ( represents is) 447.84 503.07 P
+(excited.) 85.76 489.07 T
+0.19 (If B has a correct representation of the public information, then A\325s representation) 113.77 475.07 P
+0.17 (of the public information will also contain an object for the c1 lens and an object for the) 85.76 461.07 P
+(c2 lens:) 85.76 447.07 T
+(\0505\051) 85.76 422.07 T
+2 F
+(c) 128.28 422.07 T
+0 F
+(:) 142.46 422.07 T
+2 F
+(lens) 149.54 422.07 T
+(d) 128.28 408.07 T
+0 F
+(:) 142.46 408.07 T
+2 F
+(lens) 149.54 408.07 T
+(v) 128.28 394.07 T
+0 F
+(:) 142.46 394.07 T
+2 F
+(c1) 149.54 394.07 T
+3 F
+( \327) 160.87 394.07 T
+2 F
+( c) 166.87 394.07 T
+(w) 128.28 380.07 T
+0 F
+(:) 142.46 380.07 T
+2 F
+(c2) 149.54 380.07 T
+3 F
+( \327) 160.87 380.07 T
+2 F
+(d) 169.87 380.07 T
+0 F
+0.66 (B\325s response \050\324the c2 lens is excited\325\051 can be seen as being composed of two parts: the) 85.76 354.07 P
+0.04 (identification of an object \050\324the c2 lens\325\051 and the assertion that this object is excited. The) 85.76 340.07 P
+(identification of the object is achieved by means of a gap; \324the c2 lens\325 corresponds to:) 85.76 326.07 T
+(\0506\051) 85.76 300.07 T
+2 F
+(Y) 128.28 300.07 T
+0 F
+(:) 142.46 300.07 T
+2 F
+(lens, T) 149.54 300.07 T
+0 F
+(:) 184.55 300.07 T
+2 F
+( c2) 187.88 300.07 T
+3 F
+( \327) 202.21 300.07 T
+2 F
+(Y) 211.21 300.07 T
+0 F
+-0.57 (The fillers for the gaps) 85.76 274.07 P
+2 F
+-0.57 (Y) 195.24 274.07 P
+0 F
+-0.57 ( and) 201.91 274.07 P
+2 F
+-0.57 (T) 224.11 274.07 P
+0 F
+-0.57 ( are) 230.78 274.07 P
+2 F
+-0.57 (d) 250.3 274.07 P
+0 F
+-0.57 ( and) 256.3 274.07 P
+2 F
+-0.57 (w) 278.49 274.07 P
+0 F
+-0.57 (, respectively. Secondly, B\325s utterance contains) 286.5 274.07 P
+-0.01 (new information about the object) 85.76 260.07 P
+2 F
+-0.01 (d) 248.04 260.07 P
+0 F
+-0.01 (. Assuming that in this conversation B is an expert on) 254.04 260.07 P
+0.32 (lenses, A and B will make the proposition that this lens is excited public information. B) 85.76 246.07 P
+0.07 (can achieve this by simply moving \324) 85.76 232.07 P
+2 F
+0.07 (u) 260.19 232.07 P
+0 F
+0.07 (:) 269.26 232.07 P
+2 F
+0.07 (excited) 275.67 232.07 P
+3 F
+0.07 ( \327) 309.65 232.07 P
+2 F
+0.07 (b) 318.8 232.07 P
+0 F
+0.07 (\325 from its private to its public informa-) 324.8 232.07 P
+-0.34 (tion. In the case that A was asking a genuine question \050i.e., not an exam question or a rhe-) 85.76 218.07 P
+0.06 (torical question\051, A\325s private information did not yet contain a proof for the fact that) 85.76 204.07 P
+2 F
+0.06 (d) 493.9 204.07 P
+0 F
+0.06 ( is) 499.9 204.07 P
+0.02 (excited. Therefore, A has to add a fresh proof for that proposition to its representation of) 85.76 190.07 P
+-0.11 (the public information. In summary, after the exchange in \0502\051, the public information has) 85.76 176.07 P
+(been updated with the information that the c2 lens is excited.) 85.76 162.07 T
+85.76 140.19 510.96 155.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 140.19 510.96 155.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 153.15 238.76 153.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.) 92.85 133.53 T
+2 F
+-0.37 (S) 107.02 133.53 P
+0 F
+-0.37 ( needs to be filled with an object which stands for a situation, i.e., the situation in virtue of which) 112.02 133.53 P
+2 F
+-0.44 (excited) 107.02 121.53 P
+3 F
+-0.44 ( \327) 135.34 121.53 P
+2 F
+-0.44 (x) 141.96 121.53 P
+0 F
+-0.44 ( \050for some object) 146.4 121.53 P
+2 F
+-0.44 (x) 215.18 121.53 P
+0 F
+-0.44 (\051 is true. If) 219.62 121.53 P
+2 F
+-0.44 (excited) 262.57 121.53 P
+3 F
+-0.44 ( \327) 290.89 121.53 P
+2 F
+-0.44 (x) 297.5 121.53 P
+0 F
+-0.44 ( is true, there is exactly one such situation. Thus,) 301.94 121.53 P
+(the identity of that situation cannot be something which the questioner is interested in.) 107.02 109.53 T
+85.76 104.19 510.96 749.07 C
+0 0 0 0 1 1 1 K
+114.11 600.28 510.96 749.07 C
+0 0 0 1 0 0 0 K
+0 0 0 0 1 1 1 K
+0 0 0 1 0 0 0 K
+2 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(a) 152.62 736.54 T
+0 F
+(:) 161.07 736.54 T
+2 F
+(lens) 166.29 736.54 T
+(b) 152.62 724.54 T
+0 F
+( :) 158.07 724.54 T
+2 F
+(lens) 166.29 724.54 T
+(s) 152.62 713.1 T
+0 F
+( :) 157.85 713.1 T
+2 F
+(c1) 166.63 713.1 T
+3 F
+( \327) 177.96 713.1 T
+2 F
+( a) 183.96 713.1 T
+(t) 153.18 701.1 T
+0 F
+(:) 160.63 701.1 T
+2 F
+(c2) 166.96 701.1 T
+3 F
+( \327) 178.29 701.1 T
+2 F
+(b) 187.29 701.1 T
+(u) 151.79 687.99 T
+0 F
+(:) 160.79 687.99 T
+2 F
+(excited) 167.13 687.99 T
+3 F
+( \327) 201.11 687.99 T
+2 F
+(b) 210.11 687.99 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+145.29 696.86 230.33 747.88 R
+0.5 H
+2 Z
+N
+(public) 239.55 700.19 T
+128.28 636.49 156.63 636.49 2 L
+N
+128.28 653.5 128.28 636.49 2 L
+N
+156.63 653.5 156.63 636.49 2 L
+N
+(excited) 128.28 622.26 T
+3 F
+( \327) 162.27 622.26 T
+173.64 635.82 173.64 618.81 2 L
+N
+173.64 618.26 201.98 618.26 2 L
+N
+201.98 618.81 201.98 635.82 2 L
+N
+2 F
+(lens) 178.19 604.58 T
+145.29 691.19 139.62 691.19 2 L
+N
+139.62 658.6 142.6 658.6 139.62 648.22 136.64 658.6 4 Y
+0 Z
+N
+139.62 658.6 142.6 658.6 139.62 648.22 136.64 658.6 4 Y
+V
+139.62 691.19 139.62 658.85 2 L
+2 Z
+N
+150.96 725.2 128.28 725.2 2 L
+N
+184.98 641.37 187.95 641.37 184.98 630.99 182 641.37 4 Y
+0 Z
+N
+184.98 641.37 187.95 641.37 184.98 630.99 182 641.37 4 Y
+V
+184.98 674.18 184.98 641.62 2 L
+2 Z
+N
+128.28 725.2 128.28 674.18 2 L
+N
+128.28 674.18 184.98 674.18 2 L
+N
+0 0 0 0 1 1 1 K
+85.76 104.19 510.96 749.07 C
+0.72 1.2 594.72 841.2 C
+0 0 0 1 0 0 0 K
+0 0 0 0 1 1 1 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "106" 4
+%%Page: "107" 5
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(107) 289.36 67.85 T
+85.76 101.19 510.96 749.07 R
+7 X
+V
+1 14 Q
+0 X
+(Logic and indirect information) 85.76 739.74 T
+0 12 Q
+0.4 (In order to deal with more complicated cases of information flow, we need to introduce) 85.76 721.07 P
+0.42 (some formal notation. Let) 85.76 707.07 P
+3 F
+0.42 (G) 215.1 707.07 P
+3 9.6 Q
+0.34 (A) 222.33 704.07 P
+0 12 Q
+0.42 (and) 232 707.07 P
+3 F
+0.42 (G) 252.74 707.07 P
+3 9.6 Q
+0.34 (B) 259.98 704.07 P
+0 12 Q
+0.42 ( stand for the pools of information of A and B, re-) 266.38 707.07 P
+-0.64 (spectively. Now, reconsider \0504\051. There we provided a pictorial representation of the filling) 85.76 693.07 P
+-0.43 (of two gaps, i.e.,) 85.76 679.07 P
+4 F
+-0.43 (X) 166.69 679.07 P
+0 F
+-0.43 ( and) 174.69 679.07 P
+2 F
+-0.43 (S) 197.15 679.07 P
+0 F
+-0.43 ( in the segment) 203.15 679.07 P
+4 F
+-0.43 (X) 277.42 679.07 P
+0 F
+-0.43 ( :) 285.42 679.07 P
+2 F
+-0.43 (lens) 293.89 679.07 P
+0 F
+-0.43 (,) 313.23 679.07 P
+2 F
+-0.43 (S) 318.8 679.07 P
+0 F
+-0.43 ( :) 324.8 679.07 P
+2 F
+-0.43 (excited) 333.27 679.07 P
+3 F
+-0.43 ( \327) 367.25 679.07 P
+4 F
+-0.43 (X) 375.39 679.07 P
+0 F
+-0.43 (. Henceforth, we will write) 383.39 679.07 P
+-0.12 (the following to state that the gaps in a segment) 85.76 665.07 P
+3 F
+-0.12 (D) 316.58 665.07 P
+0 F
+-0.12 ( can be filled given some pool of infor-) 323.92 665.07 P
+(mation) 85.76 651.07 T
+3 F
+(G) 122.1 651.07 T
+0 F
+(:) 129.33 651.07 T
+(\0507\051) 85.76 626.07 T
+(There is a substitution [) 128.28 626.07 T
+3 F
+(s]) 241.61 626.07 T
+0 F
+( such that:) 252.84 626.07 T
+3 F
+(G) 305.17 626.07 T
+0 F
+-2.4 (|) 315.41 626.07 S
+(-) 315.91 627.07 T
+3 F
+(D) 322.41 626.07 T
+0 F
+( [) 329.75 626.07 T
+3 F
+(s) 336.75 626.07 T
+0 F
+(]) 343.98 626.07 T
+0.17 (A substitution [) 85.76 600.07 P
+3 F
+0.17 (s]) 160.77 600.07 P
+0 F
+0.17 ( is an assignment of objects to the gaps in a segment. For instance, the) 172 600.07 P
+0.47 (substitution that is represented in \0504\051 is written [) 85.76 586.07 P
+2 F
+0.47 (X) 320.14 586.07 P
+0 F
+0.47 ( :=) 327.47 586.07 P
+2 F
+0.47 (b) 344.5 586.07 P
+0 F
+0.47 (,) 350.5 586.07 P
+2 F
+0.47 (S) 356.97 586.07 P
+0 F
+0.47 ( :=) 362.97 586.07 P
+2 F
+0.47 (u) 380 586.07 P
+0 F
+0.47 (]. In its entirety \0504\051 corre-) 386 586.07 P
+(sponds to:) 85.76 572.07 T
+(\0508\051) 85.76 547.07 T
+3 F
+(G) 128.28 547.07 T
+3 9.6 Q
+(B) 135.52 544.07 T
+0 12 Q
+-2.4 (|) 144.92 547.07 S
+(-) 145.42 548.07 T
+4 F
+(X) 151.92 547.07 T
+0 F
+(:) 162.92 547.07 T
+2 F
+( lens, S) 166.26 547.07 T
+0 F
+(:) 203.59 547.07 T
+2 F
+( excited) 206.93 547.07 T
+3 F
+( \327) 243.91 547.07 T
+4 F
+(X) 252.91 547.07 T
+0 F
+([) 263.91 547.07 T
+2 F
+(X) 267.91 547.07 T
+0 F
+(:=) 278.24 547.07 T
+2 F
+( b, S) 288.35 547.07 T
+0 F
+( :=) 309.35 547.07 T
+2 F
+( u) 322.45 547.07 T
+0 F
+(].) 331.45 547.07 T
+(If we carry out the substitutions in \0508\051 we obtain:) 85.76 521.07 T
+(\0509\051) 85.76 496.07 T
+3 F
+(G) 128.28 496.07 T
+3 9.6 Q
+(B) 135.52 493.07 T
+0 12 Q
+-2.4 (|) 144.92 496.07 S
+(-) 145.42 497.07 T
+2 F
+(b) 151.92 496.07 T
+0 F
+(:) 160.92 496.07 T
+2 F
+( lens, u) 164.25 496.07 T
+0 F
+(:) 201.59 496.07 T
+2 F
+( excited) 204.92 496.07 T
+3 F
+( \327) 241.9 496.07 T
+2 F
+(b) 250.9 496.07 T
+0 F
+0 (Logic enters the picture through the relation \324) 85.76 470.07 P
+0 -2.4 (|) 304.08 470.07 B
+0 (-) 304.58 471.07 P
+0 (\325. Alternative ways to read \324) 311.08 470.07 P
+3 F
+0 (G) 445.72 470.07 P
+0 F
+0 -2.4 (|) 455.96 470.07 B
+0 (-) 456.47 471.07 P
+2 F
+0 (C) 462.96 470.07 P
+0 F
+0 (\325 are: \324) 470.97 470.07 P
+2 F
+0 (C) 502.95 470.07 P
+0 F
+0.48 (can be derived in) 85.76 456.07 P
+3 F
+0.48 (G) 172.99 456.07 P
+0 F
+0.48 (\325 and \324) 180.22 456.07 P
+2 F
+0.48 (C) 212.5 456.07 P
+0 F
+0.48 ( is deducible from) 220.51 456.07 P
+3 F
+0.48 (G) 312.41 456.07 P
+0 F
+0.48 (\325. In the examples that we presented up) 319.65 456.07 P
+-0.41 (till now, something could be deduced from a pool of information if it was literally present) 85.76 442.07 P
+0.73 (in that pool of information. Logic, however, also allows us to make information that is) 85.76 428.07 P
+0.72 (implicitly present explicit. Consider, for instance, the following two pieces of informa-) 85.76 414.07 P
+(tion:) 85.76 400.07 T
+(\05010\051) 85.76 375.07 T
+(\050a\051) 128.28 375.07 T
+(If Mary\325s car is in the garage, then she is at home.) 149.54 375.07 T
+(\050b\051) 128.28 361.07 T
+(Mary\325s car is in the garage.) 149.54 361.07 T
+-0.48 (A pool of information which contains these two pieces of information, implicitly contains) 85.76 335.07 P
+1.48 (the information that Mary is at home. If we abbreviate the propositions expressed by) 85.76 321.07 P
+0.25 (\05010.a\051 and \05010.b\051 as \324) 85.76 307.07 P
+2 F
+0.25 (p) 187.4 307.07 P
+3 F
+0.25 (\336) 196.66 307.07 P
+2 F
+0.25 ( q) 208.5 307.07 P
+0 F
+0.25 (\325 and \324) 217.76 307.07 P
+2 F
+0.25 (p) 249.58 307.07 P
+0 F
+0.25 (\325, respectively, then the formal representations of the) 255.58 307.07 P
+(corresponding informational items are:) 85.76 293.07 T
+(\05011\051) 85.76 268.07 T
+(\050a\051) 128.28 268.07 T
+2 F
+(f) 151.21 268.07 T
+0 F
+( : \050) 154.54 268.07 T
+2 F
+(p) 167.88 268.07 T
+3 F
+(\336) 176.88 268.07 T
+2 F
+(q) 191.72 268.07 T
+0 F
+(\051) 197.72 268.07 T
+(\050b\051) 128.28 254.07 T
+2 F
+(a) 149.54 254.07 T
+0 F
+( :) 155.54 254.07 T
+2 F
+(p) 164.88 254.07 T
+0 F
+0.05 (In other words, there is a proof) 85.76 228.07 P
+2 F
+0.05 ( f) 234.39 228.07 P
+0 F
+0.05 ( for the proposition \050) 240.78 228.07 P
+2 F
+0.05 (p) 340.33 228.07 P
+3 F
+0.05 (\336) 349.38 228.07 P
+2 F
+0.05 (q) 364.28 228.07 P
+0 F
+0.05 (\051 and a proof) 370.28 228.07 P
+2 F
+0.05 (a) 435.14 228.07 P
+0 F
+0.05 ( for the propo-) 441.14 228.07 P
+-0.14 (sition) 85.76 214.07 P
+2 F
+-0.14 (p) 115.3 214.07 P
+0 F
+-0.14 (. A proof for \050) 121.3 214.07 P
+2 F
+-0.14 (p) 188.4 214.07 P
+3 F
+-0.14 (\336) 197.27 214.07 P
+2 F
+-0.14 (q) 211.98 214.07 P
+0 F
+-0.14 (\051 corresponds to a function which yields a proof for) 217.98 214.07 P
+2 F
+-0.14 (q) 466.57 214.07 P
+0 F
+-0.14 ( when it) 472.57 214.07 P
+0.25 (is applied to a proof for) 85.76 200.07 P
+2 F
+0.25 (p) 203.26 200.07 P
+0 F
+0.25 (. Thus,) 209.26 200.07 P
+2 F
+0.25 (f) 245.77 200.07 P
+0 F
+0.25 ( can be used to obtain a proof for) 249.11 200.07 P
+2 F
+0.25 (q) 413.02 200.07 P
+0 F
+0.25 ( by applying) 419.02 200.07 P
+2 F
+0.25 (f) 482.78 200.07 P
+0 F
+0.25 ( to) 486.11 200.07 P
+2 F
+0.25 (a) 501.96 200.07 P
+0 F
+0.25 (.) 507.96 200.07 P
+-0.74 (This way, we obtain the proof) 85.76 186.07 P
+2 F
+-0.74 ( f) 226.02 186.07 P
+3 F
+-0.74 (\327) 233.87 186.07 P
+2 F
+-0.74 (a) 239.13 186.07 P
+0 F
+-0.74 ( for) 245.13 186.07 P
+2 F
+-0.74 (q) 263.63 186.07 P
+0 F
+-0.74 ( \050where \324) 269.63 186.07 P
+3 F
+-0.74 (\327) 311.45 186.07 P
+0 F
+-0.74 (\325 stands for function application\051. In other) 314.45 186.07 P
+-0.19 (words, a proof for \324Mary is at home\325 can be constructed from the information that is con-) 85.76 172.07 P
+(veyed by \05010.a\051 and \05010.b\051.) 85.76 158.07 T
+2 F
+(Presupposition) 85.76 134.07 T
+0 F
+0.12 (When we dealt with the utterance of \324The c2 lens is excited\325, we pointed out that \324the c2) 85.76 120.07 P
+-0.28 (lens\325 gives rise to a gap which has to be filled with an object from the public information.) 85.76 106.07 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "107" 5
+%%Page: "108" 6
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(108) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.33 (We pointed out that the identification of this object is separate from the assertion that is) 85.76 741.07 P
+1.94 (performed by uttering \324The c2 lens is excited\325. This observation goes back to Frege) 85.76 727.07 P
+0.23 (\0501892\051, one of the founding fathers of modern logic, who pointed out that negation does) 85.76 713.07 P
+-0.12 (not affect the information that is conveyed by a definite description such as \324the c2 lens\325:) 85.76 699.07 P
+(\05012\051) 85.76 673.07 T
+(The c2 lens is not excited.) 128.28 673.07 T
+0.35 (Whereas the negation does reverse the assertion, \05012\051 still requires that the public infor-) 85.76 647.07 P
+0.36 (mation contains a c2 lens. Expressions whose interpretations behave this way are called) 85.76 633.07 P
+0.21 (presuppositions. Let us now look at some properties of presuppositions, which nicely fit) 85.76 619.07 P
+(into the model of information flow that we have proposed.) 85.76 605.07 T
+1.02 (We start by an examination of presuppositions in conditionals. Compare the dis-) 113.77 591.07 P
+(course in \05013.a\051 and \05013.b\051:) 85.76 577.07 T
+(\05013.a\051) 85.76 549.07 T
+-0.71 (John has a bottle of Ch\211teauneuf-du-Pape. He keeps it in his wine cellar. The bot-) 128.28 549.07 P
+(tle is twelve years old.) 128.28 535.07 T
+(\05013.b\051) 85.76 509.07 T
+-0.53 (\050??\051 If John has a bottle of Ch\211teauneuf-du-Pape, then he keeps it in his wine cel-) 128.28 509.07 P
+(lar. The bottle is twelve years old.) 128.28 495.07 T
+-0.36 (The two question marks indicate that the discourse in \05013.b\051 is intuitively felt to be anom-) 85.76 469.07 P
+1.15 (alous as opposed to the felicitous discourse in \05013.a\051, which differs only slightly from) 85.76 455.07 P
+0.09 (\05013.b\051. The difference between \05013.a\051 and \05013.b\051 is that in \05013.b\051 the object which is pre-) 85.76 441.07 P
+0.28 (supposed by the utterance of \324the bottle\325 is introduced in the antecedent of a conditional) 85.76 427.07 P
+-0.43 (\050i.e., \324If John has) 85.76 413.07 P
+2 F
+-0.43 (a bottle of Ch\211teauneuf-du-Pape) 168.37 413.07 P
+0 F
+-0.43 (\325\051. It seems that this object is not acces-) 324.74 413.07 P
+-0.05 (sible for reference in the sentence which follows the conditional. Note, however, that the) 85.76 399.07 P
+-0.18 (bottle is accessible from the consequent of the antecedent, as is witnessed by the fact that) 85.76 385.07 P
+-0.5 (the description \324the bottle\325 in \05014\051 picks the object which is introduced as \324a bottle of Ch\211-) 85.76 371.07 P
+(teauneuf-du-Pape\325:) 85.76 357.07 T
+(\05014\051) 85.76 331.07 T
+-0.26 (If John has a bottle of Ch\211teauneuf-du-Pape, then he keeps the bottle in his wine) 128.28 331.07 P
+(cellar.) 128.28 317.07 T
+-0.12 (We model the judgments concerning \05013\051 and \05014\051 by positing that an object which is in-) 85.76 291.07 P
+-0.67 (troduced in the antecedent of a conditional is not added to the public information, but rath-) 85.76 277.07 P
+0.13 (er treated as a hypothetical extension of the public information. This hypothetical exten-) 85.76 263.07 P
+-0.48 (sion is only used for the interpretation of the consequent of the conditional. Therefore, the) 85.76 249.07 P
+(object is no longer accessible in the discourse that succeeds the conditional.) 85.76 235.07 T
+0.11 (The felicity of \05013.a\051 requires no further explanation. It follows from our approach) 113.77 221.07 P
+0.18 (to presuppositions as it has been sketched in the previous section. So, let us turn to \05014\051.) 85.76 207.07 P
+(The structure of \05014\051 can be represented as:) 85.76 193.07 T
+(\05015\051) 85.76 165.07 T
+2 F
+(P) 128.28 165.07 T
+3 F
+(\336) 138.61 165.07 T
+2 F
+(Q) 153.46 165.07 T
+3 9.6 Q
+(p) 162.12 162.07 T
+0 12 Q
+1.2 (Here,) 85.76 136.87 P
+3 F
+1.2 (p) 116.28 136.87 P
+0 F
+1.2 ( stands for the gap that is induced by the description \324the bottle\325 \050formally we) 122.87 136.87 P
+-0.68 (write: [) 85.76 122.87 P
+2 F
+-0.68 (X) 120.07 122.87 P
+0 F
+-0.68 (:) 129.72 122.87 P
+2 F
+-0.68 ( object, P) 133.05 122.87 P
+0 F
+-0.68 (:) 179.66 122.87 P
+2 F
+-0.68 (bottle) 185.32 122.87 P
+3 F
+-0.68 (\327) 214.97 122.87 P
+2 F
+-0.68 ( X) 217.97 122.87 P
+0 F
+-0.68 (]\051. According to our approach,) 227.62 122.87 P
+3 F
+-0.68 (p) 373.16 122.87 P
+0 F
+-0.68 ( has to be filled with respect) 379.75 122.87 P
+0.36 (to) 85.76 108.87 P
+3 F
+0.36 (G) 98.46 108.87 P
+0 F
+0.36 (\050the public information of the information pool of the interpreter\051 extended with) 109.05 108.87 P
+2 F
+0.36 (P) 500.63 108.87 P
+0 F
+0.36 (,) 507.96 108.87 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "108" 6
+%%Page: "109" 7
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(109) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+(i.e., a substitution) 85.76 741.07 T
+2 F
+(S) 173.77 741.07 T
+0 F
+( is required such that:) 179.77 741.07 T
+(\05016\051) 85.76 714.07 T
+3 F
+(G) 128.28 714.07 T
+0 F
+(,) 135.52 714.07 T
+2 F
+(P) 141.52 714.07 T
+0 F
+-2.4 (|) 151.85 714.07 S
+(-) 152.35 715.07 T
+3 F
+(p) 158.85 714.07 T
+0 F
+( [) 165.43 714.07 T
+2 F
+(S) 172.43 714.07 T
+0 F
+(]) 178.43 714.07 T
+-0.11 (There is indeed such a substitution. This substitution assigns the object that is introduced) 85.76 688.07 P
+0.5 (by \324a bottle of Ch\211teauneuf-du-Pape\325 in) 85.76 674.07 P
+2 F
+0.5 (P) 282.72 674.07 P
+0 F
+0.5 (, to the gaps in) 290.05 674.07 P
+3 F
+0.5 (p) 365.89 674.07 P
+0 F
+0.5 (. Now compare this with the) 372.47 674.07 P
+-0.23 (interpretation of the last sentence in \05013.b\051. It has to be interpreted with respect to) 85.76 660.07 P
+3 F
+-0.23 (G) 476.61 660.07 P
+0 F
+-0.23 ( only.) 483.85 660.07 P
+3 F
+0.22 (G) 85.76 646.07 P
+0 F
+0.22 ( does not contain the introduction of a bottle, which is presupposed by the utterance of) 93 646.07 P
+(\324the bottle\325 in the last sentence. Hence, the infelicity of the discourse.) 85.76 632.07 T
+0.54 (Let us now consider another small discourse, which provides further evidence for) 113.77 618.07 P
+0.81 (the role of logical inference in information flow \050the example is taken from Kamp and) 85.76 604.07 P
+(Reyle, 1993, p.205\051:) 85.76 590.07 T
+(\05017\051) 85.76 564.07 T
+(\050a\051) 128.28 564.07 T
+(The barn contains a chain saw or a power drill.) 149.54 564.07 T
+(\050b\051) 128.28 550.07 T
+(It makes an ungodly racket.) 149.54 550.07 T
+0.41 (Intuitively, \324It\325 in \05017.b\051 refers to a machine, whether it be a chain saw or a power drill,) 85.76 522.07 P
+0.27 (which is present in the barn that has been introduced in \05017.a\051. Now, the problem is that) 85.76 508.07 P
+0.06 (such a machine has not been mentioned explicitly in the first sentence of \05017.a\051. We will) 85.76 494.07 P
+-0.14 (show that the information about the machine is, however, implicit in the information that) 85.76 480.07 P
+-0.15 (is conveyed by \05017.a\051 and can be made explicit by means of logical inference and the use) 85.76 466.07 P
+(of some world knowledge.) 85.76 452.07 T
+-0.27 (The piece of world knowledge that is required to interpret \324It\325 in \05017.b\051 is that chain) 113.77 438.07 P
+-0.31 (saws and power drills are machines. This piece of world knowledge is public information) 85.76 424.07 P
+0.12 (and can, therefore, be used by an interpreter of \05017\051. Thus, we assume that the public in-) 85.76 410.07 P
+0.38 (formation of a pool of information contains more than solely the information which has) 85.76 396.07 P
+0.46 (been exchanged in the current discourse. It also contains all information which can rea-) 85.76 382.07 P
+-0.55 (sonably be assumed to be public on the basis of the fact that the interlocutors are members) 85.76 368.07 P
+(of the same community of language users.) 85.76 354.07 T
+-0.7 (In order to demonstrate the logical inference from the explicit information conveyed) 113.77 340.07 P
+(by \05017.a\051 to the implicit information, we need to introduce some abbreviations:) 85.76 326.07 T
+(\05018\051) 85.76 300.07 T
+2 F
+(p) 128.28 300.07 T
+0 F
+(=) 142.46 300.07 T
+(There is a chain saw in the barn.) 156.63 300.07 T
+2 F
+(q) 128.28 286.07 T
+0 F
+(=) 142.46 286.07 T
+(There is a power drill in the barn.) 156.63 286.07 T
+2 F
+(r) 128.28 272.07 T
+0 F
+(=) 142.46 272.07 T
+(There is a machine in the barn.) 156.63 272.07 T
+(Now let us first restate the world knowledge that is needed:) 85.76 246.07 T
+(\05019\051) 85.76 220.08 T
+(\050a\051) 128.28 220.08 T
+2 F
+(p) 144.6 220.08 T
+3 F
+(\336) 153.6 220.08 T
+2 F
+( r) 165.45 220.08 T
+0 F
+(\050b\051) 128.28 206.08 T
+2 F
+(q) 145.27 206.08 T
+3 F
+(\336) 154.27 206.08 T
+2 F
+( r) 166.12 206.08 T
+0 F
+-0.62 (The content of \05017\051 itself is) 85.76 180.08 P
+2 F
+-0.62 (p) 216.02 180.08 P
+0 F
+-0.62 ( or) 222.02 180.08 P
+2 F
+-0.62 (q) 236.77 180.08 P
+0 F
+-0.62 (. Our aim is to prove that) 242.77 180.08 P
+2 F
+-0.62 (r) 361.76 180.08 P
+0 F
+-0.62 ( holds. We proceed as follows.) 366.42 180.08 P
+-0.67 (We assume that) 85.76 166.08 P
+2 F
+-0.67 ( r) 160.4 166.08 P
+0 F
+-0.67 ( does not hold \050i.e.,) 167.4 166.08 P
+2 F
+-0.67 (not r) 259.37 166.08 P
+0 F
+-0.67 (\051 and proceed to prove that this assumption leads) 281.7 166.08 P
+0.11 (to a contradiction. From that, we conclude that) 85.76 152.08 P
+2 F
+0.11 (r) 313.91 152.08 P
+0 F
+0.11 ( does hold \050this patterns of logical argu-) 318.58 152.08 P
+-0.34 (mentation is called the) 85.76 138.08 P
+2 F
+-0.34 (reductio ad absurdum) 195.72 138.08 P
+0 F
+-0.34 (\051. So, assume that) 301.04 138.08 P
+2 F
+-0.34 (not r) 387.67 138.08 P
+0 F
+-0.34 (. From \05019.a\051 and) 410.33 138.08 P
+2 F
+-0.34 (not) 495.62 138.08 P
+-0.29 (r) 85.76 124.08 P
+0 F
+-0.29 (, it follows that) 90.43 124.08 P
+2 F
+-0.29 (not p) 164.93 124.08 P
+0 F
+-0.29 ( \050this inference step is called contraposition\051. Similarly, from \05019.b\051) 188.97 124.08 P
+-0.4 (and) 85.76 110.08 P
+2 F
+-0.4 (not r) 105.69 110.08 P
+0 F
+-0.4 (, it follows that) 128.29 110.08 P
+2 F
+-0.4 ( not q) 199.76 110.08 P
+0 F
+-0.4 (. From \05017\051 and) 226.29 110.08 P
+2 F
+-0.4 (not q) 303.01 110.08 P
+0 F
+-0.4 (, we can prove that) 326.95 110.08 P
+2 F
+-0.4 (p) 418.92 110.08 P
+0 F
+-0.4 (. Note that we had) 424.92 110.08 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "109" 7
+%%Page: "110" 8
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(110) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 X
+0.22 (already proven) 85.76 741.07 P
+2 F
+0.22 (not p) 160.85 741.07 P
+0 F
+0.22 (. Hence, the assumption) 185.41 741.07 P
+2 F
+0.22 (not r) 304.29 741.07 P
+0 F
+0.22 (, on the basis of which we proved this) 327.52 741.07 P
+(contradiction, is false. In other words,) 85.76 727.07 T
+2 F
+(r) 270.73 727.07 T
+0 F
+( is true) 275.4 727.07 T
+0 9.6 Q
+(5) 308.06 731.87 T
+0 12 Q
+(.) 312.86 727.07 T
+2 F
+(Questions and answers) 85.76 703.07 T
+0 F
+0.08 (We showed that questions can also be seen as introducing a gap which needs to be filled) 85.76 689.07 P
+0.89 (by an object from the public information. Again, the role of inference and background) 85.76 675.07 P
+(knowledge is paramount. Consider:) 85.76 661.07 T
+(\05020\051) 85.76 635.07 T
+(A) 128.28 635.07 T
+(:) 142.46 635.07 T
+(Who is at home?) 149.54 635.07 T
+(B) 128.28 621.07 T
+(:) 142.46 621.07 T
+(Mary\325s car is in the garage.) 149.54 621.07 T
+0.27 (At face value, B\325s utterance does not provide a filler for the gap that corresponds to A\325s) 85.76 595.07 P
+-0.28 (question. The gap has to be filled with a person who is at home. But now, assume that the) 85.76 581.07 P
+0.38 (pool of information against which A evaluates B\325s answer contains the information that) 85.76 567.07 P
+-0.42 (\324If Mary\325s car is in the garage, then she is at home\325. In that case, the filler can be deduced;) 85.76 553.07 P
+(for details, see the discussion of \05010\051. Alternatively, consider:) 85.76 539.07 T
+(\05021\051) 85.76 513.07 T
+(A) 128.28 513.07 T
+(:) 142.46 513.07 T
+(Who is at home?) 149.54 513.07 T
+(B) 128.28 499.07 T
+(:) 142.46 499.07 T
+(If Mary\325s car is in the garage, then she is at home.) 149.54 499.07 T
+0.11 (Again, no filler is presented directly. In this case, a filler \050i.e., \324Mary\325\051 could be deduced) 85.76 473.07 P
+-0 (if the information that Mary\325s car is in the garage is already available. But also if this in-) 85.76 459.07 P
+0.71 (formation is not available, B\325s response seems to be a genuine answer to A\325s question.) 85.76 445.07 P
+0.97 (Here the notion of a hypothetical extension of the information pool, which we already) 85.76 431.07 P
+0.69 (used for modelling presuppositions, is useful again. Whereas a direct answer leads to a) 85.76 417.07 P
+-0.07 (filler of the question by simply adding it to the informational pool, an indirect answer, as) 85.76 403.07 P
+0.4 (in \05021\051, provides a filler only with respect to an additional hypothetical extension of the) 85.76 389.07 P
+0.71 (information pool \050for \05021\051 this is the information that Mary\325s car is in the garage\051. The) 85.76 375.07 P
+-0.58 (hypothetical extension can be read from the structure of the answer: if the answer is a con-) 85.76 361.07 P
+0.69 (ditional, the extension is the antecedent of the conditional. Such answers will be called) 85.76 347.07 P
+(conditional answers. Unfortunately, this structural approach is to crude. Consider:) 85.76 333.07 T
+(\05022\051) 85.76 307.07 T
+(A) 128.28 307.07 T
+(:) 142.46 307.07 T
+(Is the TV on?) 149.54 307.07 T
+(B) 128.28 293.07 T
+(:) 142.46 293.07 T
+(It is plugged in.) 149.54 293.07 T
+-0.12 (Now, assume that the background information which is available is: If the TV is plugged) 85.76 267.07 P
+-0.56 (in and the on switch has been pressed, then the TV is on. Note that in this case, B\325s answer) 85.76 253.07 P
+0.2 (is neither a direct nor a conditional answer. Fortunately, we can use the notion of condi-) 85.76 239.07 P
+-0.12 (tional answerhood as the basis of a notion of indirect answerhood which covers \05022\051. We) 85.76 225.07 P
+0.42 (define an indirect answer as an answer which, when it is added to the information pool,) 85.76 211.07 P
+-0.16 (allows us to derive a new conditional answer. In this case, the new conditional answer is:) 85.76 197.07 P
+(If the on switch has been pressed, then the TV is on.) 85.76 183.07 T
+85.76 152.19 510.96 167.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 152.19 510.96 167.17 R
+7 X
+0 0 0 1 0 0 0 K
+V
+94.76 165.15 238.76 165.15 2 L
+V
+0.5 H
+2 Z
+0 X
+N
+0.72 1.2 594.72 841.2 C
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(5.) 99.93 145.53 T
+0.34 (Note that at the end of this chain of reasoning we employed the principle of the excluded mid-) 114.11 145.53 P
+0.09 (dle, i.e.,) 114.11 133.53 P
+2 F
+0.09 (p) 148.73 133.53 P
+0 F
+0.09 ( is either false or true. That allowed us to infer) 153.73 133.53 P
+2 F
+0.09 (r) 342.46 133.53 P
+0 F
+0.09 ( from the falsity of) 346.35 133.53 P
+2 F
+0.09 (not r) 424.29 133.53 P
+0 F
+0.09 (. In intuition-) 443.55 133.53 P
+0.13 (istic mathematics \050as opposed to classical mathematics\051, this principle is not valid. In our view,) 114.11 121.53 P
+(examples such as \05018\051 strongly suggest that the principle is relied on in ordinary language use.) 114.11 109.53 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "110" 8
+%%Page: "111" 9
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(111) 289.36 67.85 T
+85.76 99.19 510.96 749.07 R
+7 X
+V
+0 X
+-0.72 (We do, however, have to be careful. As it stands, this definition turns every response) 113.77 741.07 P
+0.12 (into an indirect answer \050Groenendijk and Stokhof \0501984\051 point out a similar problem for) 85.76 727.07 P
+(their modeltheoretic account of indirect answerhood\051. Consider:) 85.76 713.07 T
+(\05023\051) 85.76 688.07 T
+(A) 128.28 688.07 T
+(:) 142.46 688.07 T
+(Is John at home?) 149.54 688.07 T
+(B) 128.28 674.07 T
+(:) 142.46 674.07 T
+(My cup is empty.) 149.54 674.07 T
+-0.43 (The conditional answer that can be inferred after adding B\325s response to the pool of infor-) 85.76 649.07 P
+-0.08 (mation is: \324John is at home if the fact that my cup is empty implies that John is at home\325.) 85.76 635.07 P
+-0.09 (The antecedent of this conditional answer \050i.e., the fact that my cup is empty implies that) 85.76 621.07 P
+0.78 (John is at home\051 is, however, rather peculiar. The antecedent and the actual answer al-) 85.76 607.07 P
+0.86 (ready suffice to find a filler for A\325s question. In other words, the antecedent is overin-) 85.76 593.07 P
+-0.15 (formative; the information that is required to prove the antecedent is equivalent to the in-) 85.76 579.07 P
+(formation conveyed by the consequent.) 85.76 565.07 T
+-0.26 (Note the difference with the answer in \05021\051. There the antecedent of the conditional) 113.77 551.07 P
+0.66 (answer contains information which is different from the information in the consequent.) 85.76 537.07 P
+0.99 (This means that the questioner can find an answer to his original question \050\324Who is at) 85.76 523.07 P
+0.33 (home\325\051, by inspecting whether Mary\325s car is in the garage. He does not have to find out) 85.76 509.07 P
+-0.14 (whether Mary is at home, to have his question answered. Therefore, the answer in \05021\051 is) 85.76 495.07 P
+-0.47 (genuinely helpful, whereas the one in \05023\051 is not. For a formal account of indirect answer-) 85.76 481.07 P
+(hood we refer to Piwek \0501998\051.) 85.76 467.07 T
+1 14 Q
+(Summary and further reading) 85.76 431.74 T
+0 12 Q
+-0.06 (The main aim of this paper is to demonstrate the usefulness of logic for the study of con-) 85.76 413.07 P
+0.16 (versation. In this respect, our aims are very much in line with Grice\325s work on logic and) 85.76 399.07 P
+0.5 (conversation \050Grice, 1975; 1989\051. Grice tried to show that the apparent divergences be-) 85.76 385.07 P
+0.22 (tween certain formal devices, such as /\134, \134/,) 85.76 371.07 P
+3 F
+0.22 (\336) 295.16 371.07 P
+0 F
+0.22 ( and their counterparts in natural language) 307.01 371.07 P
+0.22 (\050and, or, if ... then ...\051 are illusive, and disappear when we carefully study the conditions) 85.76 357.07 P
+(governing conversations.) 85.76 343.07 T
+0.3 (Of course, things have changed since Grice initiated his programme. In particular,) 113.77 329.07 P
+0.47 (whereas Grice studied the relation between logic and conversation, nowadays it has be-) 85.76 315.07 P
+0.44 (come a truism that the two only come together through the study of information and, in) 85.76 301.07 P
+0.46 (particular, information flow. Information flow is central to this paper. We show that in-) 85.76 287.07 P
+0.02 (formation can indeed be said to flow in some sense: it flows into gaps. We address some) 85.76 273.07 P
+-0.36 (problems in the treatment of presuppositions and questions, and show that the use of gaps) 85.76 259.07 P
+(and a good deal of logic gets us quite some way.) 85.76 245.07 T
+-0.65 (The notion of information that is used in this paper goes back to the pioneering work) 113.77 231.07 P
+0.71 (of Karttunen \0501976\051. He was probably the first to see indefinites as introducing objects) 85.76 217.07 P
+0.67 (which under certain conditions are available for later reference. The ideas that were al-) 85.76 203.07 P
+2.11 (ready present in Karttunen\325s work were first formalized by Heim \0501982\051 and Kamp) 85.76 189.07 P
+0.02 (\0501981\051. The work has become known as \324File Change Semantics\325 and \324Discourse Repre-) 85.76 175.07 P
+1.23 (sentation Theory\325 \050DRT\051, respectively. Interestingly, the formal frameworks set up by) 85.76 161.07 P
+1.23 (Kamp and Heim are similar to a class of formal systems, Constructive Type Theories) 85.76 147.07 P
+-0 (\050e.g., Martin-L\232f, 1984; De Bruijn, 1984; Nederpelt, Geuvers & De Vrijer, 1994\051, which) 85.76 133.07 P
+0.3 (predate them. Sundholm \0501986\051 was the first to use Constructive Type Theory \050CTT\051 to) 85.76 119.07 P
+(model some of the data that are also covered by DRT.) 85.76 105.07 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "111" 9
+%%Page: "112" 10
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(112) 289.36 67.85 T
+85.76 101.97 510.96 749.07 R
+7 X
+V
+0 X
+-0.31 (Other researchers who have employed CTT for modelling natural language are, no-) 113.77 741.07 P
+0.09 (tably, Ranta \0501994\051 and Krause \0501994\051. The core of this paper is based on Piwek \0501998\051,) 85.76 727.07 P
+-0.31 (who also uses CTT as his formal framework. The research on which this paper was based) 85.76 713.07 P
+-0.48 (was carried out within the) 85.76 699.07 P
+-0.48 (D) 211 699.07 P
+0 9.6 Q
+-0.48 (EN) 219.66 699.07 P
+0 12 Q
+-0.48 (K) 232.46 699.07 P
+-0.48 ( project \050Bunt) 241.12 699.07 P
+2 F
+-0.48 (et al.) 309.34 699.07 P
+0 F
+-0.48 (, 1998\051. Within that project, CTT was) 332.86 699.07 P
+-0.63 (used as the formal basis of a dialogue system. A selection of further papers on information) 85.76 685.07 P
+1.07 (exchange and CTT which arose out of this project are Ahn \0501995\051, Ahn and Borghuis) 85.76 671.07 P
+0.63 (\0501997\051, Beun and Kievit \0501995\051, Kievit \0501998\051, Krahmer and Piwek \050forthcoming\051, and) 85.76 657.07 P
+0.09 (Piwek and Krahmer \050in press\051. Finally, we refer to Beun \0501994\051 and Piwek \0501997; 1998\051) 85.76 643.07 P
+(for further investigations of dialogue structure and information flow within) 85.76 629.07 T
+(D) 449.05 629.07 T
+0 9.6 Q
+(EN) 457.71 629.07 T
+0 12 Q
+(K) 470.51 629.07 T
+(.) 479.17 629.07 T
+1 14 Q
+(Acknowledgements) 85.76 591.74 T
+0 12 Q
+-0.67 (Thanks are due to Robbert-Jan Beun and Adam Kilgarriff for helpful comments on an ear-) 85.76 573.07 P
+-0.46 (lier version of this paper. The research reported in this paper was financially supported by) 85.76 559.07 P
+(the Cooperation Unit of Brabant Universities \050SOBU\051.) 85.76 545.07 T
+1 14 Q
+(References) 85.76 507.74 T
+0 10 Q
+1.48 (Ahn, R.M.C. \0501995\051. Communicating contexts: A pragmatic approach to information exchange. In: P.) 85.76 490.41 P
+-0.17 (Dybjer, B. Nordstr\232m and J. Smith \050Eds.\051:) 113.77 478.41 P
+2 F
+-0.17 (Types for Proofs and Programs. International Workshop) 284.5 478.41 P
+0.14 (TYPES-94, B\214stad, Sweden, June 6-10, 1994, Selected Papers. Lecture Notes in Computer Science) 113.77 466.41 P
+(996,) 113.77 454.41 T
+0 F
+( 1-14. Berlin: Springer Verlag.) 131.27 454.41 T
+-0.12 (Ahn, R.M.C. & Borghuis, V.A.J. \0501997\051. Communication modelling and context-dependent interpretation:) 85.76 442.41 P
+0.24 (An integrated approach. In: A. Benz and G. J\212ger \050Eds.\051:) 113.77 430.41 P
+2 F
+0.24 (Proceedings of the Munich Workshop on) 346.15 430.41 P
+1.58 (Formal Semantics and Pragmatics of Dialogue, MunDial-97, Munich, Germany, March 10-12,) 113.77 418.41 P
+(1997,) 113.77 406.41 T
+0 F
+(2-20) 138.77 406.41 T
+2 F
+(. CIS 97-106) 157.1 406.41 T
+0 F
+(. Universit\212t M\237nchen: Centrum f\237r Informations- und Sprachverarbeitung.) 207.93 406.41 T
+-0.52 (Beun, R.J.  \0501994\051. Rules in dialogue. In: M.D. Brouwer and T.L. Harrington \050Eds.\051:) 85.76 394.41 P
+2 F
+-0.52 (Human-Machine Com-) 419 394.41 P
+-0.62 (munication for Educational Systems Design. NATO ASI Series F, Volume 129,) 113.77 382.41 P
+0 F
+-0.62 ( 79-88. Berlin: Spring-) 421.71 382.41 P
+(er-Verlag.) 113.77 370.41 T
+0.43 (Beun, R.J. & Kievit, L.A. \0501995\051. Resolving definite expressions in) 85.76 358.41 P
+0.43 (D) 362.53 358.41 P
+0 8 Q
+0.43 (EN) 369.75 358.41 P
+0 10 Q
+0.43 (K) 380.41 358.41 P
+0.43 (.) 387.63 358.41 P
+2 F
+0.43 (D) 393.06 358.41 P
+2 8 Q
+0.43 (EN) 400.28 358.41 P
+2 10 Q
+0.43 (K) 410.51 358.41 P
+0.43 ( Report 95/16) 417.17 358.41 P
+0 F
+0.43 (. Tilburg,) 473.03 358.41 P
+(Eindhoven: SOBU.) 113.77 346.41 T
+0.01 (Bruijn, N.G. de \0501984\051. A survey of the project Automath. In: J.R. Seldin and J.P. Hindley \050Eds.\051:) 85.76 334.41 P
+2 F
+0.01 (To H.B.) 479.56 334.41 P
+0.4 (Curry: Essays on Combinatory Logic, Lambda Calculus and Formalisms) 113.77 322.41 P
+0 F
+0.4 (, 589-606. London: Aca-) 410.6 322.41 P
+(demic Press.) 113.77 310.41 T
+-0.52 (Bunt, H.C., Ahn, R.M.C., Kievit, L.A., Piwek, P.L.A., Verlinden, M.E.M.C., Beun, R.J. & Borghuis, V.A.J.) 85.76 298.41 P
+1.06 (\0501998\051. Multimodal cooperation with the) 113.77 286.41 P
+1.06 (D) 285.18 286.41 P
+0 8 Q
+1.06 (EN) 292.4 286.41 P
+0 10 Q
+1.06 (K) 303.06 286.41 P
+1.06 (system. In: H. Bunt, R.J. Beun, T. Borghuis, L.) 313.84 286.41 P
+0.51 (Kievit and M. Verlinden \050Eds.\051:) 113.77 274.41 P
+2 F
+0.51 (Proceedings of the 2nd International Conference on Cooperative) 246.58 274.41 P
+(Multimodal Communication, CMC-98, Tilburg, The Netherlands, January 28-30, 1998,) 113.77 262.41 T
+0 F
+(44-62.) 466.83 262.41 T
+0.27 (Frege, G. \0501892\051. Ueber Sinn und Bedeutung.) 85.76 250.41 P
+2 F
+0.27 (Zeitschrift f\237r Philosophishe Kritik, 100,) 272.92 250.41 P
+0 F
+0.27 ( 25-50. [Reprinted) 436.81 250.41 P
+0.35 (in: G. Patzig \050Ed.\051 \0501986\051.) 113.77 238.41 P
+2 F
+0.35 (Funktion, Begriff, Bedeutung: F\237nf logische Studien) 222.71 238.41 P
+0 F
+0.35 (, 40-65. G\232ttingen:) 434.15 238.41 P
+(Vandenhoeck & Ruprecht].) 113.77 226.41 T
+-0.37 (Grice, H.P. \0501975\051. Logic and conversation. In: P. Cole and J.L. Morgan \050Eds.\051:) 85.76 214.41 P
+2 F
+-0.37 (Syntax and Semantics, Vol-) 402.63 214.41 P
+(ume 3: Speech Acts) 113.77 202.41 T
+0 F
+(, 41-58. New York: Academic Press.) 191.8 202.41 T
+(Grice, H.P. \0501989\051.) 85.76 190.41 T
+2 F
+(Studies in the Way of Words) 164.91 190.41 T
+0 F
+(. Harvard: Harvard University Press.) 277.96 190.41 T
+0.22 (Groenendijk, J.A.G. & Stokhof, M. \0501984\051. On the semantics of questions and the pragmatics of answers.) 85.76 178.41 P
+(In: F. Landman and F. Veltman \050Eds.\051:) 113.77 166.41 T
+2 F
+(Varieties of Formal Semantics) 272.09 166.41 T
+0 F
+(, 143-170. Dordrecht: Foris.) 394.03 166.41 T
+-0.11 (Heim, I. \0501982\051. On the Semantics of Definite and Indefinite Noun Phrases. PhD thesis, University of Am-) 85.76 154.41 P
+(herst, MA, USA.) 113.77 142.41 T
+-0.02 (Kamp, J.A.W. \0501981\051. A theory of truth and semantic interpretation. In: J. Groenendijk, T. Janssen and M.) 85.76 130.41 P
+0.18 (Stokhof \050Eds.\051:) 113.77 118.41 P
+2 F
+0.18 (Formal Methods in Study of Language) 177.74 118.41 P
+0 F
+0.18 (, 277-322.) 333.38 118.41 P
+2 F
+0.18 (Mathematical Centre Tracts 136.) 377.08 118.41 P
+0 F
+(Amsterdam: Mathematisch Centrum.) 113.77 106.41 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "112" 10
+%%Page: "113" 11
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(113) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 10 Q
+0 X
+(Kamp, J.A.W. & Reyle, U. \0501993\051.) 85.76 742.41 T
+2 F
+(From Discourse to Logic) 228.24 742.41 T
+0 F
+(. Dordrecht: Kluwer Academic Publishers.) 329.07 742.41 T
+-0.57 (Karttunen, L. \0501976\051. Discourse referents. In: J.D. McCawley \050Ed.\051:) 85.76 730.41 P
+2 F
+-0.57 (Syntax and Semantics, Volume 7: Notes) 354.96 730.41 P
+(from the Linguistic Underground.) 113.77 718.41 T
+0 F
+( New York: Academic Press.) 249.33 718.41 T
+0.68 (Kievit, L.A. \0501998\051. Context-Driven Natural Language Interpretation in Constructive Type Theory. PhD) 85.76 706.41 P
+(thesis, Tilburg University, Tilburg, The Netherlands.) 113.77 694.41 T
+-0.22 (Krahmer, E.J. & Piwek, P.L.A. \050forthcoming\051. Presupposition projection as proof construction. In: H. Bunt) 85.76 682.41 P
+-0 (and R. Muskens \050Eds.\051:) 113.77 670.41 P
+2 F
+-0 (Computing Meanings: Current Issues in Computational Semantics. Studies) 210.42 670.41 P
+(in Linguistics & Philosophy Series.) 113.77 658.41 T
+0 F
+( Dordrecht: Kluwer Academic Publishers.) 255.17 658.41 T
+-0.17 (Krause, P. \0501995\051. Presupposition and abduction in type theory. In: E. Klein, S. Manandhar, W. Nutt and J.) 85.76 646.41 P
+-0.17 (Siekmann \050Eds.\051:) 113.77 634.41 P
+2 F
+-0.17 (Working Notes of the Conference on Computational Logic and Natural Language) 185.38 634.41 P
+0.4 (Processing, South Queensferry, Scotland, April 1995,) 113.77 622.41 P
+0 F
+0.4 (no page numbers. Edinburgh: Human Com-) 333.4 622.41 P
+(munication Research Centre.) 113.77 610.41 T
+(Martin-L\232f, P. \0501984\051.) 85.76 598.41 T
+2 F
+(Intuitionistic Type Theory) 177.97 598.41 T
+0 F
+(. Napels: Bibliopolis.) 281.86 598.41 T
+0.61 (Nederpelt, R.P., Geuvers, J.H. & Vrijer, R.C. de \050Eds.\051 \0501994\051.) 85.76 586.41 P
+2 F
+0.61 (Selected Papers on Automath) 345.7 586.41 P
+0 F
+0.61 (.) 465.57 586.41 P
+2 F
+0.61 (Studies in) 471.18 586.41 P
+(Logic and the Foundations of Mathematics, Volume 133.) 113.77 574.41 T
+0 F
+( Amsterdam: North-Holland.) 341.82 574.41 T
+0.21 (Piwek, P.L.A. \0501997\051. Situated action and commitment in dialogue.) 85.76 562.41 P
+2 F
+0.21 (IPO Annual Progress Report, 32,) 360.18 562.41 P
+0 F
+0.21 ( 89-) 494.91 562.41 P
+(97.) 113.77 550.41 T
+0.16 (Piwek, P.L.A. \0501998\051. Logic, Information & Conversation. PhD thesis, Eindhoven University of Technol-) 85.76 538.41 P
+(ogy, Eindhoven, The Netherlands.) 113.77 526.41 T
+-0.38 (Piwek, P.L.A. & Krahmer, E.J. \050in press\051. Presuppositions in context: Constructing bridges. In: P. Brezillon) 85.76 514.41 P
+0.07 (and M. Cavalcanti \050Eds.\051:) 113.77 502.41 P
+2 F
+0.07 (Formal and Linguistic Aspects of Context) 219.59 502.41 P
+0 F
+0.07 (. Dordrecht: Kluwer Academic) 386.9 502.41 P
+(Publishers.) 113.77 490.41 T
+-0.46 (Ranta, A. \0501994\051. Anaphora in game theoretical semantics and in intuitionistic type theory. In: L. Haaparan-) 85.76 478.41 P
+-0.21 (ta, M. Kusch and I. Niiniluoto \050Eds.\051:) 113.77 466.41 P
+2 F
+-0.21 (Language, Knowledge and Intentionality: Perspectives on the) 264.76 466.41 P
+(Philosophy of Jaakko Hintikka) 113.77 454.41 T
+0 F
+(, 265-274. Helsinki: Acta Philosophica Fennica.) 236.81 454.41 T
+-0.59 (Sundholm, G. \0501986\051. Proof theory and meaning. In: D. Gabbay and F. Guenthner \050Eds.\051:) 85.76 442.41 P
+2 F
+-0.59 (Handbook of Phil-) 437.7 442.41 P
+(osophical Logic, Volume 3) 113.77 430.41 T
+0 F
+(, 471-506. Dordrecht: D. Reidel.) 220.99 430.41 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "113" 11
+%%Page: "114" 12
+595.45 842.4 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+85.76 777.42 510.96 789.42 R
+7 X
+0 0 0 1 0 0 0 K
+V
+85.76 61.67 510.96 75.85 R
+V
+0 12 Q
+0 X
+(114) 289.36 67.85 T
+85.76 104.19 510.96 749.07 R
+7 X
+V
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "114" 12
+%%Trailer
+%%BoundingBox: 0 0 595.45 842.4
+%%PageOrder: Ascend
+%%Pages: 12
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Symbol
+%%+ Times-BoldItalic
+%%EOF
