@@ -1,0 +1,142 @@
+<HTML>
+
+<meta name="author" content="Paul Piwek">
+<meta name="description" content="...">
+<meta name="keywords" content="dialogue, argumentation, epsrc, project, natural language processing, natural language generation">
+
+<HEAD>
+   <TITLE>Opening Up Minds: engaging dialogue generated from argument maps</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK=grey VLINK=darkgrey ALINK=darkgrey BGCOLOR=white>
+<FONT FACE = "Calibri">
+
+<style>
+    div.grid      { width: 900px; }
+    div.grid div  { float: left;}
+    div.colmain    { width: 700px; }
+    div.colside    { width: 200px; }
+</style>
+
+<div class="grid">
+<div class="colmain">
+
+<TABLE BORDER=0 CELLSPACING=15 WIDTH="100%" NOSAVE >
+<TR NOSAVE>
+
+<TD VALIGN=TOP NOSAVE><B><DIV ALIGN=left>
+<a href="https://twitter.com/openingupminds" title="Image source: GRA 0115, William Augustus Brewer Bookplate Collection, Special Collections, University of Delaware Library, Museums and Press, Newark, Delaware."><img src="open_mind.png" border="0" height="100" alt="Image source: GRA 0115, William Augustus Brewer Bookplate Collection, Special Collections, University of Delaware Library, Museums and Press, Newark, Delaware."></img></a>
+
+</TD>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+3>Opening Up Minds</B>: engaging dialogue generated from argument maps<br></FONT>
+</FONT></FONT>
+
+ 
+</TD> 
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE></TD>
+<TD VALIGN=TOP NOSAVE></TD> 
+</TR>
+
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Team</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+<a href="http://mcs.open.ac.uk/pp2464/">Paul Piwek</a> (PI at project lead organisation) and <a href="http://www.open.ac.uk/research/people/ja8956">Jacopo Amidei</a>,
+The Open University<br>
+<a href="https://www.linkedin.com/in/svetlana-stoyanchev/">Svetlana Stoyanchev</a>, Cambridge Research Laboratory, Toshiba Europe<br> 
+<a href="https://www.sheffield.ac.uk/psychology/staff/academic/tom-stafford">Tom Stafford</a> and <a href="https://lottybrand.wordpress.com/">Lotty Brand</a>, University of Sheffield<br>
+<a href="http://andreasvlachos.github.io/">Andreas Vlachos</a> and <a href="https://www.cl.cam.ac.uk/~yf273/">Youmna Farag</a>, University of Cambridge<br>
+</TD> 
+
+
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Funder</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+Engineering and Physical Sciences Research Council (<a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/T024666/1">EPSRC Grant EP/T024666/1</a>)
+</TD> 
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Description</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+<p>The project will develop a <i>dialogue system</i> interface to existing databases of the arguments surrounding controversial topics such as <i>Should the United Kingdom remain a member of the European Union?</i> or <i>Should all humans be vegan?</i> 
+
+<p>Users will be able to have a <i><a href="https://www.bbc.co.uk/programmes/b006qk11">Moral Maze</a></i> style chat with the dialogue system. <i>Moral Maze</i> is a longrunning popular BBC 4 Radio programme in which a panel discusses a controversial topic with the help of witnesses and a host who chairs the conversation. The dialogue system consists of a panel of Argumentation Bots (ArguBots) who present arguments for or against the topic under discussion (the pro and con ArguBots), a host ArguBot and a witness ArguBot (that can provide detailed evidence). The user is invited to join the panel and voice their views on the topic under discussion. Thus the user can explore what they thought and what others thought about the controversial topic. 
+
+<p>An important part of the projects will be to evaluate the effects on people's appreciation of the complexity of debate and attendant ability to comprehend the world from other people's point of view or perspective. 
+</TD> 
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Podcast and blogpost</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+For more information about the project, listen to <a href="https://boundlesspodcast.co.uk/episode/ep37-dr-paul-piwek-senior-lecturer-in-computing-open-university-opening-up-minds-with-artificial-intelligence/">this interview with Paul</a> and read <a href="http://tomstafford.staff.shef.ac.uk/?p=762">Tom's blogpost</a>.
+
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Start</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+January 2021
+</TD> 
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Duration</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+2 years
+</TD> 
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Advisory board</FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+Mevan Babakar, Chief Operating Officer, <a href="https://fullfact.org/">Fullfact</a><br>
+Richard Foster-Fletcher, <a href="https://mkai.org/">MK-AI</a>, Boundless podcast, Visiting Lecturer & Speaker on Responsible AI<br> 
+David Mair, Head of Unit, Science Advice to Policy, <a href="https://ec.europa.eu/jrc/en">EC Joint Research Centre</a><br>
+Prof. Chris Reed, <a href="https://arg-tech.org/">Centre for Argument Technology</a>, University of Dundee<br>
+Pip Willcox, Head of research, <a href="https://www.nationalarchives.gov.uk/">National Archives</a>
+</TD> 
+</TR>
+
+<TR>
+<TD VALIGN=TOP NOSAVE><B><FONT FACE="Calibri"><FONT SIZE=+2>Inquiries</FONT></FONT></B></TD>
+<TD VALIGN=TOP NOSAVE>
+For inquiries about the project, contact <script language="javascript">
+        document.write(
+           "paul.pi" +
+           "wek - &#064; - op" +
+           "en.ac.uk");
+   </script>. 
+
+</TD> 
+</TR>
+
+<TR>
+<TD>
+</TD>
+<TD>
+<br>
+<font face="calibri"><small><small>Last updated 19 January 2021</small></small></font>
+</TD>
+</TR>
+
+</TABLE>
+
+</div>
+
+<div class="colside">
+<a class="twitter-timeline" href="https://twitter.com/OpeningUpMinds?ref_src=twsrc%5Etfw">Tweets by OpeningUpMinds</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</div>
+
+<div class="clear"></div>
+
+
+
+</BODY>
+</HTML>
