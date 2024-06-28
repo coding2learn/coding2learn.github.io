@@ -1,0 +1,29 @@
+div.headerimage {
+  float: left;
+  padding 
+}
+
+div.headertext {
+    padding: 0px 20px 20px 220px; 
+}
+
+div.headeraddress{
+  font-size: 0.8em; 
+  float: bottom;
+}
+
+    div#logo {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        
+        text-align: left;
+    }
+
+    div#nav {
+        float: left;
+        width: 200px;
+        display: inline;
+	padding: 80px 0 0 0;
+    }
