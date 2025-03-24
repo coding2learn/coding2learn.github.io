@@ -72,7 +72,7 @@ else
 {	
 
 	$printstr = "Thank you for providing your information. <br> ";
-    $printstr .= '<p><a href="http://computing.open.ac.uk/coda/A6135222/CODA-release1.tar.gz">Download CODA corpus</a></p>';
+    $printstr .= '<p><a href="http://coding2learn.github.io/coda/A6135222/CODA-release1.tar.gz">Download CODA corpus</a></p>';
 	print $printstr;
 	
 	include 'include/custom_header.php';
